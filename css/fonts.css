@@ -1,0 +1,65 @@
+/* font taken from IAT 235 courses, BeFonts and Panagram */
+
+/* branding / title */
+@font-face {
+    font-family: 'Durer';
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/Durer.ttf);
+}
+
+@font-face {
+    font-family: 'PPEiko-Medium';
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/PPEiko-Medium.otf);
+    /* src: url(../fonts/Quan.woff2)../fonts/Quan.ttf); format('woff2'); */
+}
+
+@font-face {
+    font-family: 'TheSans Plain';
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/TheSans-Plain.otf);
+}
+
+@font-face {
+    font-family: 'TheSans Light';
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/TheSans-Light.otf);
+}
+
+
+h1, .h1 {
+    font-family: "PPEiko-Medium";
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+    grid-column: 1/-1;
+}
+
+h2, .h2 {
+    font-family: "Durer";
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+h3, .h3 {
+    font-family: "Durer";
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+h4, .h4 {
+    font-family: "Durer";
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+p {
+    font-family: "TheSans Light";
+    font-size: 15px;
+    line-height: 1.375;
+    margin-bottom: 1rem;
+}

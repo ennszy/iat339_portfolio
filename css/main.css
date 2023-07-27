@@ -1,0 +1,140 @@
+
+/*  CSS variables learned from Mozilla docs
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+:root {
+    --bg-main: #486877;
+    --bg-accent: #4A7C93;
+    --bg-accent2: #A1BBCB;
+    --accent-action: #F1F3DB;
+    --text-white: #f8f8f8;
+    --text-black: #202020;
+}
+
+body {
+    font-family: "Durer";
+    line-height: 1;
+    position: relative;
+    color: var(--text-white);
+    padding-bottom: 4rem;
+    background: var(--bg-main);
+    padding-left: 1rem;
+}
+
+/* display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap:1rem;
+    position:absolute;
+     */
+
+.lineArtHome{
+    scale:50%;
+    grid-column: 6;
+}
+
+
+
+/* navigation top */
+
+.lineArtNav{
+    grid-column:2;
+}
+
+.showcasesArea{
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap:1rem;
+    position:absolute;
+    /* z-index: 1; */
+}
+
+.mainCon{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap:1rem;
+    position:absolute;
+}
+
+
+/* nav bar */
+ul{
+    list-style-type: none;
+    /* margin:0;
+    padding: 0; */
+    /* overflow:0; */
+    /* position: relative; */
+    /* top:0;
+    width:100%; */
+    grid-column:6;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: inline;
+    color: var(--text-white);
+    padding: 14px 16px;
+}
+
+.worksNav{
+    grid-column: 5;
+}
+
+.myResume{
+    grid-column: 2;
+    /* margin-top: 10rem; */
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -10;
+}
+
+
+
+
+/* footer */
+.footerP{
+    color: var(--accent-action);
+    grid-column: 2/4;
+}
+
+.findMeAt{
+    color: var(--accent-action);
+}
+
+.linkedIn{
+    grid-column: 5/7;
+    padding-top: 1.5rem;
+}
+
+.Instagram{
+    margin-left: 1.5rem;
+    grid-column: 7/9;
+    padding-top: 1.5rem;
+}
+
+.pinterest{
+    grid-column: 9/11;
+    padding-top: 1.5rem;
+}
+
+.footer-con{
+    /* position:fixed; */
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    display: grid;
+}
+
+
+
+
+
+
+
+
+
+.nav__overlay {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+}
