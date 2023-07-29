@@ -50,7 +50,7 @@ body {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap:1rem;
-    position:absolute;
+    /* position:absolute; */
 }
 
 
@@ -63,7 +63,8 @@ ul{
     /* position: relative; */
     /* top:0;
     width:100%; */
-    grid-column:6;
+    /* grid-column:; */
+    margin-right:5rem;
 }
 
 li{
@@ -74,6 +75,7 @@ li a{
     display: inline;
     color: var(--text-white);
     padding: 14px 16px;
+    text-decoration: none;
 }
 
 .worksNav{
@@ -83,9 +85,10 @@ li a{
 .myResume{
     grid-column: 2;
     /* margin-top: 10rem; */
-    margin-left: auto;
-    margin-right: auto;
-    z-index: -10;
+    /* margin-left: auto;
+    margin-right: auto; */
+    z-index: 10;
+    margin:1rem;
 }
 
 
@@ -95,6 +98,7 @@ li a{
 .footerP{
     color: var(--accent-action);
     grid-column: 2/4;
+    margin-top: -1.5rem;
 }
 
 .findMeAt{
@@ -103,31 +107,19 @@ li a{
 
 .linkedIn{
     grid-column: 5/7;
-    padding-top: 1.5rem;
+    padding-top: .5rem;
 }
 
 .Instagram{
     margin-left: 1.5rem;
     grid-column: 7/9;
-    padding-top: 1.5rem;
+    padding-top: 0.5rem;
 }
 
 .pinterest{
     grid-column: 9/11;
-    padding-top: 1.5rem;
+    padding-top: 0.5rem;
 }
-
-.footer-con{
-    /* position:fixed; */
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    display: grid;
-}
-
-
-
-
-
-
 
 
 
@@ -138,3 +130,50 @@ li a{
     align-items: center;
     overflow: auto;
 }
+
+
+
+
+/* awkward page */
+.awkwardContent{
+    grid-column: 2/6;
+    margin-top: 8rem;
+}
+
+.oopsBackButton{
+    grid-column: 2/4;
+    margin-top: 0.5rem;
+}
+
+.button{
+    border: 2px solid var(--text-white);
+    background-color: transparent;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-radius: 32rem;
+    color: var(--text-white);
+}
+
+.cloud-con{
+    grid-column: 7;
+    padding-top: 5rem;
+    padding-left: 7rem;
+}
+
+.cloud{
+    scale:1.4;
+}
+
+
+footer{
+    position: absolute;
+    width: 100vw;
+    /* background: #111; */
+    color: #fff;
+    margin-top: 7rem;
+}
+
+/* .footer-content{
+} */
+
+
