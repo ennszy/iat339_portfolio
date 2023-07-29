@@ -17,44 +17,35 @@ body {
     color: var(--text-white);
     padding-bottom: 4rem;
     background: var(--bg-main);
+    /* padding-left: 1rem; */
+    z-index: -2;
+}
+
+header{
+    border-bottom: 1px solid var(--text-white);
+    padding-bottom: 1rem;
+}
+
+.navMenu_items{
+    padding-left: 4rem;
+}
+
+/* navigation bar */
+.lineArtNav{
+    grid-column:2;
+    margin-top: 1rem;
     padding-left: 1rem;
 }
 
-/* display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap:1rem;
-    position:absolute;
-     */
-
-.lineArtHome{
-    scale:50%;
-    grid-column: 6;
+.nav__overlay {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
 }
 
-
-
-/* navigation top */
-
-.lineArtNav{
-    grid-column:2;
-}
-
-.showcasesArea{
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap:1rem;
-    position:absolute;
-    /* z-index: 1; */
-}
-
-.mainCon{
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap:1rem;
-    /* position:absolute; */
-}
-
-
-/* nav bar */
+/* nav bar items */
 ul{
     list-style-type: none;
     /* margin:0;
@@ -78,23 +69,24 @@ li a{
     text-decoration: none;
 }
 
-.worksNav{
-    grid-column: 5;
+
+/* 12 column grid */
+.mainCon{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap:1rem;
 }
-
-.myResume{
-    grid-column: 2;
-    /* margin-top: 10rem; */
-    /* margin-left: auto;
-    margin-right: auto; */
-    z-index: 10;
-    margin:1rem;
-}
-
-
 
 
 /* footer */
+footer{
+    position: absolute;
+    width: 100vw;
+    /* background: #111; */
+    color: #fff;
+    margin-top: 7rem;
+}
+
 .footerP{
     color: var(--accent-action);
     grid-column: 2/4;
@@ -122,20 +114,65 @@ li a{
 }
 
 
+.headshot{
+    grid-column: 6;
+    margin-top: -5rem;
+    z-index: -4;
 
-.nav__overlay {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    overflow: auto;
 }
+
+.aboutHeader{
+    grid-column: 1/8;
+    margin-left: 1rem;
+    z-index: -1;
+}
+
+.about-content{
+    grid-column: 1/12;
+    margin-left: 1rem;
+}
+
+.aboutPageBG{
+    display: none;
+}
+
+
+
+/* desktop */
+@media screen and (min-width: 62rem) {
+/* 
+.lineArtHome{
+    scale:50%;
+    grid-column: 6;
+} */
+
+
+/* navigation top */
+
+/* .showcasesArea{
+    gap:1rem;
+    position:absolute;
+} */
+
+/* .worksNav{
+    grid-column: 5;
+} */
+/* 
+.myResume{
+    grid-column: 2;
+    z-index: 10;
+    margin:1rem;
+} */
+
+
+
+
 
 
 
 
 /* awkward page */
-.awkwardContent{
+/* .awkwardContent{
     grid-column: 2/6;
     margin-top: 8rem;
 }
@@ -162,18 +199,56 @@ li a{
 
 .cloud{
     scale:1.4;
-}
-
-
-footer{
-    position: absolute;
-    width: 100vw;
-    /* background: #111; */
-    color: #fff;
-    margin-top: 7rem;
-}
-
-/* .footer-content{
 } */
 
 
+
+    /* about page */
+    .aboutPageBG{
+        display:block;
+        position: fixed;
+        top: 0;
+        bottom:0;
+        left:0;
+        right:0;
+        z-index:-50;
+    }
+/*     
+    .imgAbout{
+        scale:1.11;
+    } */
+    
+    .meP{
+        line-height: 1.5rem;
+    }
+
+    .headshot{
+        display: none;
+    }
+    
+    .aboutHeader{
+        grid-column: 2/5;
+        margin-top: 7rem;
+    }
+    
+    .about-content{
+        grid-column: 2/7;
+    }
+
+
+
+}
+
+
+/* tablet */
+/* @media screen and (min-width: 48rem) {
+
+
+} */
+
+
+/* mobile */
+@media screen and (min-width: 36rem) {
+
+
+}
