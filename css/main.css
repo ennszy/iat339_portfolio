@@ -80,7 +80,7 @@ li a{
 
 /* footer */
 footer{
-    position: absolute;
+    /* position: absolute; */
     width: 100vw;
     color: #fff;
     margin-top: -10rem;
@@ -198,6 +198,22 @@ footer{
 }
 
 
+/* works */
+.worksHeader{
+    margin-left: 1rem;
+    grid-column: 1/7;
+}
+
+.projectDropdown{
+    grid-column: 7/11;
+    margin-top: 3rem;
+}
+
+.projects{
+    grid-column: 1;
+    z-index: -10;
+    margin-left: 1.5rem;
+}
 
 
 
@@ -313,12 +329,12 @@ footer{
     }
 
 /* footer */
-/* footer{
-    position: absolute;
-    width: 100vw; */
+ footer{
+    /* position: absolute; */
+    width: 100vw; 
     /* background: #111; */
-    /* color: #fff;
-    margin-top: -10rem;
+    color: #fff;
+    /* margin-top: -10rem; */
 }
 
 .footerP{
@@ -347,7 +363,7 @@ footer{
     padding-top: 0.5rem;
 }
 
-
+/*
 .headshot{
     grid-column: 6;
     margin-top: 1rem;
