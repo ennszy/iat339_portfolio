@@ -38,7 +38,7 @@ h1, .h1 {
     grid-column: 1/-1;
 }
 
-h2, .h2 {
+h2, .h2:not(.oopsMobileHeader) {
     font-family: "Durer";
     font-size: 4rem;
     margin-bottom: 0.5rem;
@@ -50,7 +50,7 @@ h3, .h3 {
     margin-bottom: 0.5rem;
 }
 
-h4, .h4 {
+h4, .h4:not(.footerMobileText) {
     font-family: "Durer";
     font-size: 2rem;
     margin-bottom: 0.5rem;

@@ -15,14 +15,14 @@ body {
     line-height: 1;
     position: relative;
     color: var(--text-white);
-    padding-bottom: 4rem;
+    /* padding-bottom: 4rem; */
     background: var(--bg-main);
     /* padding-left: 1rem; */
     z-index: -2;
 }
 
 header{
-    border-bottom: 1px solid var(--text-white);
+    /* border-bottom: 1px solid var(--text-white); */
     padding-bottom: 1rem;
 }
 
@@ -34,7 +34,7 @@ header{
 .lineArtNav{
     grid-column:2;
     margin-top: 1rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
 }
 
 .nav__overlay {
@@ -82,59 +82,122 @@ li a{
 footer{
     position: absolute;
     width: 100vw;
-    /* background: #111; */
     color: #fff;
-    margin-top: 7rem;
+    margin-top: -10rem;
 }
 
 .footerP{
     color: var(--accent-action);
-    grid-column: 2/4;
+    grid-column: 2/6;
     margin-top: -1.5rem;
 }
 
 .findMeAt{
     color: var(--accent-action);
+    margin: 0;
+    font-size: 14px;
+}
+
+.f2{
+    margin-top: -1rem;
+}
+
+.f3{
+    margin-top: -0.5rem;
 }
 
 .linkedIn{
-    grid-column: 5/7;
+    grid-column: 7/12;
     padding-top: .5rem;
 }
 
 .Instagram{
-    margin-left: 1.5rem;
-    grid-column: 7/9;
-    padding-top: 0.5rem;
+    /* margin-left: 1.5rem; */
+    grid-column: 7/12;
+    /* padding-top: 0.5rem; */
 }
 
 .pinterest{
-    grid-column: 9/11;
-    padding-top: 0.5rem;
+    grid-column: 7/12;
+    /* padding-top: 0.5rem; */
+}
+
+.footerMobileText{
+    font-size: 1.4rem;
 }
 
 
+/* about */
+
 .headshot{
     grid-column: 6;
-    margin-top: -5rem;
-    z-index: -4;
+    /* margin-top: 0rem; */
+    padding-left: 1rem;
+    z-index: 1;
 
 }
 
 .aboutHeader{
     grid-column: 1/8;
     margin-left: 1rem;
-    z-index: -1;
+    z-index: 2;
+    margin-top: -5.5rem;
 }
 
 .about-content{
     grid-column: 1/12;
     margin-left: 1rem;
+    margin-top: -2rem;
 }
 
 .aboutPageBG{
     display: none;
 }
+
+.aboutButton1{
+    grid-column: 2/6;
+    margin-top: -1rem;
+    margin-left: -1rem;
+}
+
+.aboutButton2{
+    grid-column: 6/11;
+    margin-top: -1rem;
+}
+
+
+/* awkward page */
+.awkwardContent{
+    grid-column: 2/11;
+    margin-top: 1rem;
+}
+
+.oopsBackButton{
+    grid-column: 2/6;
+    margin-top: 0.5rem;
+}
+
+.button{
+    border: 2px solid var(--text-white);
+    background-color: transparent;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-radius: 8rem;
+    color: var(--text-white);
+}
+
+.cloudCharacter{
+    scale: 0.4;
+    margin-top: -13rem;
+    grid-column: 4/11;
+}
+
+.oopsMobileHeader{
+    font-family: "Durer";
+    font-size: 2.5rem;
+}
+
+
 
 
 
@@ -164,42 +227,44 @@ footer{
     margin:1rem;
 } */
 
-
-
-
-
-
-
-
-/* awkward page */
-/* .awkwardContent{
+.awkwardContent{
     grid-column: 2/6;
-    margin-top: 8rem;
 }
 
-.oopsBackButton{
-    grid-column: 2/4;
-    margin-top: 0.5rem;
+.awkwardText{
+    margin-top: 5rem;
 }
+
+.cloudCharacter{
+    scale:1.14;
+    margin-top: 3rem;
+    grid-column: 7/11;
+}
+
+.oopsMobileHeader{
+    font-family: "Durer";
+    font-size: 4rem;
+}
+
+
+
+
+/*
 
 .button{
     border: 2px solid var(--text-white);
     background-color: transparent;
     text-align: center;
     padding: 1rem 1.5rem;
-    border-radius: 32rem;
+    border-radius: 8rem;
     color: var(--text-white);
 }
 
-.cloud-con{
-    grid-column: 7;
-    padding-top: 5rem;
-    padding-left: 7rem;
-}
-
-.cloud{
-    scale:1.4;
+.cloudCharacter{
+    scale: 0.3;
+    margin-top: -13rem;
 } */
+
 
 
 
@@ -233,12 +298,71 @@ footer{
     
     .about-content{
         grid-column: 2/7;
+        /* margin-top: 0rem; */
     }
 
+    .aboutButton1{
+        grid-column: 2/4;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+    
+    .aboutButton2{
+        grid-column: 4/6;
+        margin-top: 0.5rem;
+    }
 
-
+/* footer */
+/* footer{
+    position: absolute;
+    width: 100vw; */
+    /* background: #111; */
+    /* color: #fff;
+    margin-top: -10rem;
 }
 
+.footerP{
+    color: var(--accent-action);
+    grid-column: 2/4;
+    margin-top: -1.5rem;
+}
+
+.findMeAt{
+    color: var(--accent-action);
+}
+
+.linkedIn{
+    grid-column: 5/7;
+    padding-top: .5rem;
+}
+
+.Instagram{
+    margin-left: 1.5rem;
+    grid-column: 7/9;
+    padding-top: 0.5rem;
+}
+
+.pinterest{
+    grid-column: 9/11;
+    padding-top: 0.5rem;
+}
+
+
+.headshot{
+    grid-column: 6;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    z-index: 1;
+
+} */
+
+
+.footerMobileText{
+    font-family: "Durer";
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+}
 
 /* tablet */
 /* @media screen and (min-width: 48rem) {
