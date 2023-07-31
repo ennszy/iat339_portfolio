@@ -26,10 +26,10 @@ a{
     color: var(--accent-action);
 }
 
-/* a:hover, .a:focus, .a:active{
+a:hover, .a:focus, .a:active{
     text-decoration: underline;
     color: var(--bg-accent2);
-} */
+}
 
 /* img:hover, img:focus, img:active{
     opacity: 0.8;
@@ -53,6 +53,9 @@ header{
     scale:0.5;
 }
 
+hr{
+    grid-column: 1/-1;
+}
 
 .nav__overlay {
     display: flex;
@@ -84,6 +87,7 @@ li a{
     color: var(--text-white);
     padding: 14px 16px;
     text-decoration: none;
+    /* margin-bottom: 2rem; */
 }
 
 
@@ -197,6 +201,12 @@ footer{
     padding: 1rem 1.5rem;
     border-radius: 8rem;
     color: var(--text-white);
+    transition: background-color 0.3s ease;
+}
+
+.button:hover{
+    background-color: var(--bg-accent);
+    /* transition: var(--bg-accent) 0.3s ease; */
 }
 
 .cloudCharacter{
@@ -300,6 +310,60 @@ footer{
    color: var(--bg-main);
    margin: 0;
 }
+
+
+
+/* styleguide */
+
+.styleCenter{
+    text-align: center;
+}
+
+
+.styleContent{
+    grid-column: 2/12;
+}
+
+.styleSubHeaders{
+    grid-column: 2/12;
+}
+
+.headingLeft{
+    grid-column: 2/5;
+    margin:0rem;
+}
+
+.headingRight{
+    grid-column: 5/12;
+    margin:0rem;
+}
+
+
+input{
+    outline: 0;
+    border-width: 0 0 0.125rem;
+    border-color: white;
+    background-color: transparent;
+    color: var(--bg-accent2);
+    margin: 1rem 1rem;
+}
+
+
+/* changing placeholder color source: https://www.w3schools.com/howto/howto_css_placeholder.asp */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--text-white);
+    opacity: 0.5; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--text-white);
+    opacity: 0.5;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--text-white);
+    opacity: 0.5;
+  }
 
 /* end of mobile */
 
@@ -548,12 +612,8 @@ footer{
 
 .imagesHome-con{
     grid-column: 7/-1;
-    margin-top: -3rem;
-    /* z-index: -5; */
-}
-
-.lineArtLarge{
-    /* scale:2; */
+    margin-top:-9rem;
+    z-index: 1;
 }
 
 .search{
@@ -569,8 +629,25 @@ footer{
     scale:1.5;
 }
 
+.homeProjHoodie{
+    grid-column: 10;
+    margin-top: 4rem;
+    z-index: -10;
+    scale: 0.8;
+}
 
+.homeProjTidyTunes{
+    grid-column: 2;
+    margin-top: 1rem;
+    z-index: -10;
+    /* scale: 0.8; */
+}
 
+.homeProjLLF{
+    grid-column: 5;
+    margin-top: -4rem;
+    z-index: -10;
+}
 /* 
 
 .imagesHome-con{

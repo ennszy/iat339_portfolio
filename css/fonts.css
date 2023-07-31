@@ -39,7 +39,8 @@ h1, .h1 {
 }
 
 h2, .h2:not(.oopsMobileHeader,.introHeader2 ) {
-    font-family: "Durer";
+    /* font-family: "Durer"; */
+    font-family: "PPEiko-Medium";
     font-size: 3rem;
     margin-bottom: 0.5rem;
 }
@@ -79,3 +80,15 @@ p {
     /* color: var(--accent-action); */
 }
 
+
+.Durer{
+    font-family: "Durer";
+}
+
+.Eiko{
+    font-family: "PPEiko-Medium";
+}
+
+.TheSans{
+    font-family: "TheSans Light";
+}
