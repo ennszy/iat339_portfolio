@@ -438,7 +438,30 @@ textarea{
     margin-top: 3rem;
 }
 
+.palette{
+    scale:1.5;
+    margin-left: 50rem;
+    margin-top: 3rem;
+}
 
+.styleSubHeaders{
+    grid-column: 2/12;
+}
+
+.headingLeft{
+    grid-column: 8;
+    margin:0rem;
+}
+
+.headingRight{
+    grid-column: 9/12;
+    margin:0rem;
+}
+
+.Pstyle{
+    margin-left: 45rem;
+    /* margin-top: 3rem; */
+}
 
 
 
