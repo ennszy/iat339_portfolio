@@ -48,10 +48,11 @@ header{
 
 /* navigation bar */
 .lineArtNav{
-    grid-column:2;
     margin-top: 1rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
+    scale:0.5;
 }
+
 
 .nav__overlay {
     display: flex;
@@ -90,7 +91,8 @@ li a{
 .mainCon{
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    overflow: hidden;
+    padding-bottom: 4rem;
+    /* overflow: hidden; */
     /* gap:1rem; */
 }
 
@@ -138,7 +140,6 @@ footer{
 .footerMobileText{
     font-size: 1.4rem;
 }
-
 
 
 /* about */
@@ -259,6 +260,49 @@ footer{
 .extraInfo{
     grid-column: 2/-1;
 }
+
+
+/* mainPAGE */
+.contentHome-con{
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.imagesHome-con{
+    grid-column: 2/-1;
+    margin-left: 0.5rem;
+    /* margin-top: 4rem; */
+    /* margin-left: ; */
+    /* margin-right: auto;
+    width: 50%; */
+
+}
+
+.lineArtLarge{
+    margin-top: 4rem;
+}
+
+
+.search{
+    margin-top: 1rem;
+    grid-column: 2/9;
+    padding: 5px;
+    border-radius: 1rem;
+    background-color: #A1BBCB;
+    color: #486877;
+}
+
+.searchIcon{
+    padding-left: 0.5rem;
+}
+
+.pHomeSearch{
+   color: var(--bg-main);
+   margin: 0;
+}
+
+/* end of mobile */
+
 
 
 
@@ -435,7 +479,7 @@ footer{
 .footerP{
     color: var(--accent-action);
     grid-column: 2/4;
-    margin-top: -2rem;
+    margin-top: -1rem;
 }
 
 .findMeAt{
@@ -483,6 +527,7 @@ footer{
 .resume-imgCon{
     scale:0.75;
     grid-column: 5/-1;
+    margin-bottom: 5px;
     /* overflow: scroll; */
     /* padding-bottom: 6rem; */
     /* margin-bottom: 0.5rem; */
@@ -493,6 +538,73 @@ footer{
 } 
 
 
+/* mainPAGE */
+
+.contentHome-con{
+    grid-column: 2/9;
+    text-align: left;
+    z-index: -1;
+}
+
+.imagesHome-con{
+    grid-column: 7/-1;
+    margin-top: -3rem;
+    /* z-index: -5; */
+}
+
+.lineArtLarge{
+    /* scale:2; */
+}
+
+.search{
+    margin-top: 1rem;
+    grid-column: 2/4;
+    border-radius: 1rem;
+    background-color: #A1BBCB;
+    color: #486877;
+}
+
+.searchIcon{
+    padding: 0rem 0.5rem;
+    scale:1.5;
+}
+
+
+
+/* 
+
+.imagesHome-con{
+    grid-column: 2/-1;
+    margin-left: 0.5rem; */
+    /* margin-top: 4rem; */
+    /* margin-left: ; */
+    /* margin-right: auto;
+    width: 50%; */
+
+/* }
+
+.lineArtLarge{
+    margin-top: 4rem;
+}
+
+
+.search{
+    margin-top: 1rem;
+    grid-column: 2/9;
+    padding: 5px;
+    border-radius: 1rem;
+    background-color: #A1BBCB;
+    color: #486877;
+}
+
+.searchIcon{
+    padding-left: 0.5rem;
+}
+
+.pHomeSearch{
+   color: var(--bg-main);
+   margin: 0;
+} */
 
 
 }

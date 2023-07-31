@@ -33,26 +33,34 @@
 
 h1, .h1 {
     font-family: "PPEiko-Medium";
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 0.5rem;
     grid-column: 1/-1;
 }
 
-h2, .h2:not(.oopsMobileHeader) {
-    font-family: "Durer";
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
-}
-
-h3, .h3 {
+h2, .h2:not(.oopsMobileHeader,.introHeader2 ) {
     font-family: "Durer";
     font-size: 3rem;
     margin-bottom: 0.5rem;
 }
 
-h4, .h4:not(.footerMobileText) {
+.introHeader2{
+    font-family: "PPEiko-Medium";
+    font-size: 3.5rem;
+    margin-top:1rem;
+    /* margin-bottom: 0.5rem; */
+    /* margin-top: 0.5rem; */
+}
+
+h3, .h3 {
     font-family: "Durer";
     font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h4, .h4:not(.footerMobileText) {
+    font-family: "Durer";
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
@@ -70,3 +78,4 @@ p {
     margin-bottom: 1rem;
     /* color: var(--accent-action); */
 }
+
