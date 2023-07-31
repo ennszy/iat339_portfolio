@@ -30,6 +30,9 @@
                         <li>
                             <a href="resume.html" onclick="closeMenu()">resume</a>
                         </li>
+                        <li>
+                            <a href="styles.html" onclick="closeMenu()">styleguide</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -48,7 +51,7 @@
 
                 <div class="styleContent artDirection">
                     <h4>Art Direction: Who am I</h4>
-                    <img class="" src="imgs/artDirectionSmall.png" alt="project">
+                    <img class="artDirectionImg" src="imgs/artDirectionSmall.png" alt="project">
                 </div>
 
                 <div class=" styleContent typefaces">
@@ -73,7 +76,7 @@
                     </div>
                 </div>
 
-                <div class=" styleContent typefaces">
+                <div class=" styleContent colorPalette">
                     <h4>color palette</h4>
                     <img class="palette" src="imgs/colorPaletteSmall.png" alt="project">
                 </div>
@@ -104,7 +107,7 @@
 
                 <div class="styleContent paragraphs">
                     <h4>Paragraph</h4>
-                    <p>
+                    <p class="Pstyle">
                         Hi, I’m Sabrina, a fourth year at Simon Fraser University majoring in Interactive Arts and Technology with a concentration in design and a minor in legal studies! I design because I love to play creatively. My passion resides in crafting enjoyable experiences paired with compelling visuals to produce memorable interactions through thoughtful detail considerations of the users. 
                     </p>
                     
@@ -112,14 +115,17 @@
 
                 <div class="styleContent numberedList">
                     <h4>numbered list</h4>
-                    <p>My Projects</p>
-                    <ol>
-                        <li>IAT 267 Tidy Tunes</li>
-                        <li>IAT 235 Microsite Obakki</li>
-                        <li>IAT 235 Microsite LLF</li>
-                        <li>SIAT hoodie design</li>
-                        <li>Extracurricular club works </li>
-                    </ol>
+                    <div class="Pstyle">
+                        <p>My Projects</p>
+                        <ol>
+                            <li>IAT 267 Tidy Tunes</li>
+                            <li>IAT 235 Microsite Obakki</li>
+                            <li>IAT 235 Microsite LLF</li>
+                            <li>SIAT hoodie design</li>
+                            <li>Extracurricular club works </li>
+                        </ol>
+                    </div>
+                    
                 </div>
             </div>
 
@@ -187,8 +193,8 @@
                         <!-- message -->
                         <label class="" for="">Always happy to chat! How can I help?</label>  
                         <textarea class ="contactTextarea" placeholder="Type in your message" rows="6" cols="33"></textarea>
-                    
-                        <button class="button contactbutton" type="submit" onclick="alert('Thanks! I will get back to you soon')">Send</button>
+                        
+                        <button class="button" type="submit" onclick="alert('Thanks! I will get back to you soon')">Send</button>
                     </form>
                     
                     
@@ -196,6 +202,12 @@
 
                 <div class="styleContent ">
                     <h4>Image as a link</h4>
+                    <figure>
+                        <a target = "_blank" href="works.html">
+                            <img class="" src="imgs/hoodieDesignSmall.png" alt="project">
+                        </a>
+                        <figcaption>product: SIAT's hoodie merch</figcaption>
+                    </figure>
                     
                 </div>
 
