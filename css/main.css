@@ -90,9 +90,14 @@ li a{
 .mainCon{
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
+    overflow: hidden;
     /* gap:1rem; */
 }
 
+.footer-con{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
 
 /* footer */
 footer{
@@ -227,12 +232,8 @@ footer{
 
 /* resume */
 
-.resume-con{
-}
-
 .resume-introContent{
-    grid-column: 1/-1;
-    text-align: center;
+    grid-column: 2/-1;
 }
 
 .location{
@@ -250,29 +251,17 @@ footer{
     margin-bottom:-19rem;
 }
 
-/* .resumeIMG{
-    scale:0.37;
-    margin: -15.5rem;
-} */
-
 .inv {
     display: none;
 }
 
 
 .extraInfo{
-    /* grid-column: 2/10; */
-    grid-column: 1/-1;
-    margin-left: 1.5rem;
+    grid-column: 2/-1;
 }
 
-.content_1{
-    
-}
 
-.listResumeItems{
-    margin-left: -1rem;
-}
+
 
 
 
@@ -436,12 +425,11 @@ footer{
 
 /* footer */
  footer{
-    /* position: absolute; */
+    position: absolute;
     width: 100vw; 
     /* background: #111; */
     color: #fff;
     padding-top: 1rem;
-    margin-top: 0rem;
 }
 
 .footerP{
@@ -485,6 +473,28 @@ footer{
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
+
+
+/* resume Deskstop */
+.resume-introContent{
+    grid-column: 2/5;
+}
+
+.resume-imgCon{
+    scale:0.75;
+    grid-column: 5/-1;
+    /* overflow: scroll; */
+    /* padding-bottom: 6rem; */
+    /* margin-bottom: 0.5rem; */
+}
+
+.extraInfo{
+    grid-column: 2/5;
+} 
+
+
+
+
 }
 
 /* tablet */
