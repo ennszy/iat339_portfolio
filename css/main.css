@@ -26,6 +26,17 @@ a{
     color: var(--accent-action);
 }
 
+/* a:hover, .a:focus, .a:active{
+    text-decoration: underline;
+    color: var(--bg-accent2);
+} */
+
+/* img:hover, img:focus, img:active{
+    opacity: 0.8;
+    transition: white 0.5s ease-out;
+} */
+
+
 header{
     /* border-bottom: 1px solid var(--text-white); */
     padding-bottom: 1rem;
@@ -214,19 +225,54 @@ footer{
 
 
 
+/* resume */
+
+.resume-con{
+}
+
+.resume-introContent{
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.location{
+    margin-bottom: -0.5rem;
+}
+
+.mail{
+    margin-bottom: -0.5rem;
+}
+
+.resume-imgCon{
+    scale:0.4;
+    margin-left: 1rem;
+    margin-top:-19rem;
+    margin-bottom:-19rem;
+}
+
+/* .resumeIMG{
+    scale:0.37;
+    margin: -15.5rem;
+} */
+
+.inv {
+    display: none;
+}
 
 
+.extraInfo{
+    /* grid-column: 2/10; */
+    grid-column: 1/-1;
+    margin-left: 1.5rem;
+}
 
+.content_1{
+    
+}
 
-
-
-
-
-
-
-
-
-
+.listResumeItems{
+    margin-left: -1rem;
+}
 
 
 

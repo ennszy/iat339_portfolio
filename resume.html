@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/fonts.css">
+
+    <script src="./scripts/main.js" defer></script>
     
 </head>
 
@@ -41,17 +43,116 @@
     <main>
         <section id="">
             <div class="mainCon resume-con">
-                <div class="">
-                    <h4>My Resume</h4>
+                <div class="resume-introContent">
+                    
+                    <a target="_blank" href="https://drive.google.com/file/d/1il6rK4999K3iqhIJZLqUShYCNqIQbioG/view?usp=sharing">
+                        <h3>My Resume</h3>
+                    </a>
                     <p>Here’s a little background history on me!</p>
+
+                    <!-- <div class="contactInfo"> -->
+                        <!-- SVG icons converted to inline using https://www.bayustudio.com/app/svg-encoder/ -->
+                        <div class="location">
+                            <p>
+                                <a target="_blank" href="">
+                                    <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.95 8.575C5.38641 8.575 4.84591 8.35111 4.4474 7.9526C4.04888 7.55409 3.825 7.01358 3.825 6.45C3.825 5.88641 4.04888 5.34591 4.4474 4.9474C4.84591 4.54888 5.38641 4.325 5.95 4.325C6.51358 4.325 7.05409 4.54888 7.4526 4.9474C7.85112 5.34591 8.075 5.88641 8.075 6.45C8.075 6.72906 8.02003 7.00538 7.91324 7.2632C7.80645 7.52102 7.64993 7.75528 7.4526 7.9526C7.25528 8.14992 7.02102 8.30645 6.7632 8.41324C6.50538 8.52003 6.22906 8.575 5.95 8.575ZM5.95 0.5C4.37196 0.5 2.85856 1.12687 1.74271 2.24271C0.626873 3.35856 0 4.87196 0 6.45C0 10.9125 5.95 17.5 5.95 17.5C5.95 17.5 11.9 10.9125 11.9 6.45C11.9 4.87196 11.2731 3.35856 10.1573 2.24271C9.04144 1.12687 7.52804 0.5 5.95 0.5Z" fill="#F1F3DB"/>
+                                        </svg>
+                                </a>
+                                Richmond BC
+                            </p>
+                        </div>
+
+                        <div class="mail">
+                            <p class="contactP">
+                                <a target="_blank" href="">
+                                    <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.7 13.6C1.2325 13.6 0.832151 13.4334 0.498951 13.1002C0.165751 12.767 -0.000565223 12.3669 1.44312e-06 11.9V1.7C1.44312e-06 1.2325 0.166601 0.832151 0.499801 0.498951C0.833001 0.165751 1.23307 -0.000565223 1.7 1.44312e-06H15.3C15.7675 1.44312e-06 16.1678 0.166601 16.501 0.499801C16.8342 0.833001 17.0006 1.23307 17 1.7V11.9C17 12.3675 16.8334 12.7678 16.5002 13.101C16.167 13.4342 15.7669 13.6006 15.3 13.6H1.7ZM8.5 7.65L1.7 3.4V11.9H15.3V3.4L8.5 7.65ZM8.5 5.95L15.3 1.7H1.7L8.5 5.95ZM1.7 3.4V1.7V11.9V3.4Z" fill="#F1F3DB"/>
+                                        </svg>
+                                </a>
+                            sabrina.tn.chang@gmail.com
+                            </p>
+                        </div>
+
+                        <div class="phone">
+                            <p class="contactP">
+                                <a target="_blank" href="">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.077 7.22306C4.301 9.62856 6.273 11.5921 8.6785 12.8246L10.5485 10.9546C10.778 10.7251 11.118 10.6486 11.4155 10.7506C12.3675 11.0651 13.396 11.2351 14.45 11.2351C14.9175 11.2351 15.3 11.6176 15.3 12.0851V15.0516C15.3 15.5191 14.9175 15.9016 14.45 15.9016C6.4685 15.9016 0 9.43306 0 1.45156C0 0.984062 0.3825 0.601562 0.85 0.601562H3.825C4.2925 0.601562 4.675 0.984062 4.675 1.45156C4.675 2.51406 4.845 3.53406 5.1595 4.48606C5.253 4.78356 5.185 5.11506 4.947 5.35306L3.077 7.22306Z" fill="#F1F3DB"/>
+                                        </svg>
+                                </a>
+                            604-218-6389
+                            </p>
+                        </div>
+
+                    <!-- </div> -->
                 </div>
 
+                <div class="resume-imgCon">
+                    <a target="_blank" href="https://drive.google.com/file/d/1il6rK4999K3iqhIJZLqUShYCNqIQbioG/view?usp=sharing">
+                        <img class="resumeIMG" src="imgs/resume.png" alt="project">
+                    </a>
+                </div>
 
+                <div class="extraInfo">
+                    <select id="target">
+                        <option value="">see more...</option>
+                        <option value="content_1">my interests</option>
+                        <option value="content_2">extracurriculars</option>
+                        <!-- <option value="content_3">Option 3</option> -->
+                    <select>
+            
+                    <div id="content_1" class="inv">
+                        <h5>visual & UX/UI design</h5>
+                            <p>IAT 102 - Graphic Design <br>
+                                IAT 103W - Design Communication & Collaboration <br>
+                                IAT 235 - Information Design <br>
+                                IAT 201 - Human-Computer Interaction and Cognition <br>
+                                IAT 333 - Interactive Design Methods <br>
+                                IAT 351 - Advanced Human Computer Interaction<br>
+                                IAT 339 - Web Design and Development
+                            </p>
+                        
+                        <h5>product design</h5>
+                            <p>IAT 102 - Graphic Design <br>
+                                BPK 180w - Introduction to Ergonomics <br>
+                                BUS 238 - Introduction to Entrepreneurship and Innovation<br>
+                                IAT 233 - Spatial Design <br>
+                                IAT 267 - Introduction to Technological Systems<br>
+                                IAT 336 - Materials in Design <br>
+                            </p>
+                    
+                    </div>
+
+                    <div id="content_2" class="inv">
+                        <h5>@SFUCAC</h5>
+                            <p>First year executive (2020-2021) <br>
+                                Director of Communications (2021-2022) <br>
+                                External Coordinator (2022-present)<br>
+                            </p>
+
+                        <h5>@Interactive Arts and Technology</h5>
+                            <p>TechTeam leader (2021-2022)<br>
+                                IATSU Director of Web & Social Media (2022-2023)<br>
+                                Eunoia Internal Design Team (2022-2023)<br>
+                            </p>
+
+                        <h5>@SFUEnactus</h5>
+                            <p>Director of Design (2023-present)</p>   
+
+                        <h5>@Eggette House</h5>
+                            <p>Junior Graphic Designer (2021-2022)</p>
+                        
+                        <h5>@Barroco&Valenza fine furniture</h5>
+                            <p>Web Designer (2024)</p> 
+                       
+                    </div>
+                </div>
             </div>
 
-        </section>
-       
-        
+
+
+        </section>    
     </main>
     
         <footer>

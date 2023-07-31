@@ -51,9 +51,16 @@ h3, .h3 {
 }
 
 h4, .h4:not(.footerMobileText) {
-    font-family: "PPEiko-Medium";
+    font-family: "Durer";
     font-size: 2rem;
     margin-bottom: 0.5rem;
+}
+
+h5{
+    font-family: 'TheSans Plain';
+    font-size: 15px;
+    line-height: 1.375;
+    margin-bottom: 1rem;
 }
 
 
@@ -62,4 +69,5 @@ p {
     font-size: 15px;
     line-height: 1.375;
     margin-bottom: 1rem;
+    /* color: var(--accent-action); */
 }
