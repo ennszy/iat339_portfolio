@@ -59,6 +59,7 @@ header{
 
 hr{
     grid-column: 1/-1;
+    margin: 3rem;
 }
 
 .nav__overlay {
@@ -141,7 +142,7 @@ footer{
 
 .pinterest{
     grid-column: 7/12;
-    margin-top: -1.5rem;
+    margin-top: 0rem;
     /* padding-top: 0.5rem; */
 }
 
@@ -375,6 +376,88 @@ textarea{
     opacity: 0.5;
   }
 
+
+
+/* process analysis */
+
+.processHoodie{
+    margin-right: 1rem;
+}
+
+.PA_intro{
+    /* margin-left: 1rem; */
+    grid-column: 2/-1;
+}
+
+.PA_collab{
+    grid-column: 2/4;
+}
+
+.PA_contrib{
+    grid-column: 6/9;
+}
+
+.PA_tools{
+    grid-column: 10/12;
+}
+
+.PA_projectImg{
+    grid-column: 2/-1;
+}
+
+.PA_content{
+    grid-column: 2/-1;
+}
+
+.PA_imageScaleDown1{
+    scale:0.7;
+    margin-left: -3rem;
+}
+
+.PA_imageScaleDown2{
+    scale:0.45;
+    margin-left: -14rem;
+    margin-top: -9rem;
+}
+
+.PA_imageScaleDown3{
+    scale:0.6;
+    margin-left: -7rem;
+    /* margin-top: -9rem; */
+}
+
+.PA_imageScaleDown4{
+    scale:0.7;
+    margin-left: -4rem;
+    /* margin-top: -9rem; */
+}
+
+.backToWorks{
+    grid-column: 2/7;
+}
+
+.p01{
+    grid-column: 1/11;
+    margin-left: -1.5rem;
+}
+
+.p02{
+    grid-column: 1/11;
+    margin-left: -1.5rem;
+    
+}
+
+.p03{
+    grid-column: 1/11;
+    margin-left: -1.5rem;
+}
+
+
+
+
+
+
+
 /* end of mobile */
 
 
@@ -391,6 +474,106 @@ textarea{
 
 /* desktop */
 @media screen and (min-width: 62rem) {
+
+/* PA Hoodie */
+
+.PA_intro{
+    grid-column: 2/6;
+}
+
+.topIMG{
+   margin-top: -10rem; 
+}
+
+.PA_collab{
+    grid-column: 2/3;
+}
+
+.PA_contrib{
+    grid-column: 3/4;
+}
+
+.PA_tools{
+    grid-column: 4/5;
+}
+
+.PA_projectImg{
+    grid-column: 8/-1;
+}
+
+.PA_content{
+    grid-column: 2/6;
+}
+
+.PA_imageScaleDown1{
+    scale:1;
+    margin-top:2rem;
+    /* margin-left: -3rem; */
+}
+
+.PA_imageScaleDown2{
+    scale:1;
+    margin-top: 3rem;
+} 
+
+.backToWorks{
+    grid-column: 2/4;
+    scale:0.7;
+    margin-left: -3rem;
+}
+
+
+.PA_imageScaleDown3{
+    scale:1;
+    /* margin-left: -7rem; */
+    margin-top: 2rem;
+}
+
+.PA_imageScaleDown4{
+    scale:1;
+    /* scale:0.7; */
+    /* margin-left: -4rem; */
+    /* margin-top: -9rem; */
+}
+
+    /* .processHoodie{
+        margin-right: 1rem;
+    }
+    
+    .PA_intro{
+        grid-column: 2/-1;
+    }
+    
+    .PA_collab{
+        grid-column: 2/4;
+    }
+    
+    .PA_contrib{
+        grid-column: 6/9;
+    }
+    
+    .PA_tools{
+        grid-column: 10/12;
+    }
+    
+    .PA_projectImg{
+        grid-column: 2/-1;
+    }
+    
+    .PA_content{
+        grid-column: 2/-1;
+    }
+    
+    .PA_imageScaleDown1{
+        scale:0.7;
+        margin-left: -3rem;
+    }
+    
+    .PA_imageScaleDown2{
+        scale:0.45;
+        margin-left: -14rem;
+        margin-top: -9rem;
+    }     */
 
 /* styleguide */
 
@@ -483,7 +666,19 @@ textarea{
 }
 
 .p01{
-    grid-column: 1;
+    grid-column: 1/4;
+}
+
+.p02{
+    grid-column: 4/7;
+}
+
+.p03{
+    grid-column: 7/10;
+}
+
+/* .p01{
+    grid-column: 1/-1;
     z-index: -10;
     scale: 1;
 }
@@ -491,18 +686,16 @@ textarea{
 .p02{
     grid-column: 4;
     z-index: -10;
-}
-.p03{
+} */
+/* .p03{
     grid-column: 7;
     z-index: -10;
 }
 
 .p04{
     grid-column: 10;
-    /* grid-row: 2; */
     z-index: -10;
-    /* margin-top: -13rem; */
-}
+} */
 
 /* 
 .lineArtHome{
@@ -646,7 +839,7 @@ textarea{
 
 .pinterest{
     grid-column: 9/11;
-    padding-top: 2.5rem;
+    padding-top: 1.3rem;
 }
 
 /*
