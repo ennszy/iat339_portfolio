@@ -362,17 +362,17 @@ textarea{
 
 /* changing placeholder color source: https://www.w3schools.com/howto/howto_css_placeholder.asp */
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: var(--text-white);
+    color: var(--bg-accent2);
     opacity: 0.5; /* Firefox */
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: var(--text-white);
+    color: var(--bg-accent2);
     opacity: 0.5;
   }
   
   ::-ms-input-placeholder { /* Microsoft Edge */
-    color: var(--text-white);
+    color: var(--bg-accent2);
     opacity: 0.5;
   }
 
@@ -455,8 +455,48 @@ textarea{
 
 
 
+/* contact page */
+.contactHeaderCon{
+    grid-column: 2/-1;
+}
+
+.coffeeChat{
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.contactForm{
+    margin-top: 1rem;
+    grid-column: 2/-1;
+}
+
+button.contactButton{
+    margin-top: 1rem;   
+    grid-column: 2/6;
+}
+
+#payment-topicForm{
+    margin-left: 1rem;
+    padding-right: 0.5rem;
+    background:none;
+    color: var(--bg-accent2);
+    border:none;
+    border-bottom: 2px solid var(--text-white);
+}
 
 
+.coffeeTableImg{
+    grid-column: 3/-1;
+    scale:0.35;
+    margin-left: 1rem;
+    z-index: -10;
+    margin-top: -10rem;
+}
+
+/* 
+option [value="General"]{
+    background: var(--text-black);
+} */
 
 /* end of mobile */
 
@@ -474,6 +514,44 @@ textarea{
 
 /* desktop */
 @media screen and (min-width: 62rem) {
+
+/* contact page */
+.contactHeaderCon{
+    grid-column: 2/-1;
+}
+
+.coffeeChat{
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.contactForm{
+    margin-top: 1rem;
+    grid-column: 2/5;
+}
+
+button.contactButton{
+    margin-top: 1rem;   
+    grid-column: 2/3;
+}
+
+#payment-topicForm{
+    margin-left: 1rem;
+    padding-right: 0.5rem;
+    background:none;
+    color: var(--bg-accent2);
+    border:none;
+    border-bottom: 2px solid var(--text-white);
+}
+
+
+.coffeeTableImg{
+    grid-column: 2/-1;
+    scale:1;
+    margin-left: -3rem;
+    z-index: -10;
+    margin-top: -16rem;
+}
 
 /* PA Hoodie */
 
