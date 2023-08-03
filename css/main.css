@@ -192,6 +192,7 @@ footer{
 .awkwardContent{
     grid-column: 2/11;
     margin-top: 1rem;
+    text-align: center;
 }
 
 .oopsBackButton{
@@ -216,8 +217,8 @@ footer{
 
 .cloudCharacter{
     scale: 0.4;
-    margin-top: -13rem;
-    grid-column: 4/11;
+    margin-top: -8rem;
+    grid-column: 1/11;
 }
 
 .oopsMobileHeader{
@@ -801,6 +802,7 @@ button.contactButton{
 
 .awkwardContent{
     grid-column: 2/6;
+    text-align: left;
 }
 
 .awkwardText{
