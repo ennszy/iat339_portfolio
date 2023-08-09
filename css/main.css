@@ -168,7 +168,7 @@ footer{
 
 
 
-/* about */
+/* about page*/
 .headshot{
     grid-column: 6;
     padding-left: 1rem;
@@ -176,10 +176,15 @@ footer{
 }
 
 .aboutHeader{
-    grid-column: 1/8;
-    margin-left: 1rem;
+    grid-column: 5/11;
+    margin-left: -0.5rem;
     z-index: 2;
-    margin-top: -5.5rem;
+    margin-top: -5rem;
+    /* scale: 2; */
+}
+
+.aboutMeH3{
+    scale: 2;
 }
 
 .about-content{
@@ -233,7 +238,8 @@ img.noHoverImg {
 }
 
 .button:hover{
-    opacity: 0.5;
+    /* opacity: 0.5; */
+    background-color: var(--bg-accent);
     /* transition: var(--bg-accent) 0.3s ease; */
 }
 
@@ -247,25 +253,6 @@ img.noHoverImg {
     font-family: "Durer";
     font-size: 2.5rem;
 }
-
-
-/* works */
-.worksHeader{
-    margin-left: 1rem;
-    grid-column: 1/7;
-}
-
-.projectDropdown{
-    grid-column: 7/11;
-    margin-top: 3rem;
-}
-
-.projects{
-    grid-column: 1;
-    z-index: -10;
-    margin-left: 1rem;
-}
-
 
 
 
@@ -309,11 +296,6 @@ img.noHoverImg {
 .imagesHome-con{
     grid-column: 2/-1;
     margin-left: 0.5rem;
-    /* margin-top: 4rem; */
-    /* margin-left: ; */
-    /* margin-right: auto;
-    width: 50%; */
-
 }
 
 .lineArtLarge{
@@ -559,18 +541,14 @@ button.contactButton{
 
 
 
-
 /* new projects page */
-.projectsPage{
-    margin-left: 1rem;
-}
 
 .wHeader{
     grid-column: 2/-1;
 }
 
 .PP{
-    grid-column: 2/-1;
+    grid-column: 1/-1;
 }
 
 /* https://www.w3schools.com/howto/howto_css_image_responsive.asp */
@@ -591,12 +569,120 @@ button.contactButton{
 }
 
 
+.projectsCon{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.projectMal{
+    grid-column: 1/-1;
+}
+
+.projectTT{
+    grid-column: 1/-1;
+}
+
+.projectHoodie{
+    grid-column: 1/-1;
+}
+
+.projectObbaki{
+    grid-column: 1/-1;
+}
+
+.projectLLF{
+    grid-column: 1/-1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 /* desktop */
 @media screen and (min-width: 62rem) {
+
+/* new projects page */
+
+.wHeader{
+    grid-column: 2/-1;
+}
+
+/* .PP{
+    grid-column: 1/-1;
+} */
+
+/* https://www.w3schools.com/howto/howto_css_image_responsive.asp */
+.projectImg{
+    width: 100%;
+    height: auto;
+}
+
+
+.worksH5{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.worksP{
+    margin-top: 0;
+    /* color: var(--b); */
+}
+
+
+.projectsCon{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.projectMal{
+    grid-column: 2/7;
+}
+
+.projectTT{
+    grid-column: 2/7;
+}
+
+.projectHoodie{
+    grid-column: 7/12;
+}
+
+.projectObbaki{
+    grid-column: 2/7;
+}
+
+.projectLLF{
+    grid-column: 7/12;
+}
+
+
+
+
+
+
+
+
+
+
+
     
 
 
@@ -812,34 +898,6 @@ button.contactButton{
 
 
 
-/* works */
-.worksHeader{
-    margin-left: 1rem;
-    grid-column: 1/3;
-}
-
-.projectDropdown{
-    grid-column: 3/11;
-    margin-top: 3rem;
-}
-
-.projectsPage{
-    margin-left: 1rem;
-    /* grid-template-rows: auto; */
-    /* gap:0; */
-}
-
-.p01{
-    grid-column: 1/4;
-}
-
-.p02{
-    grid-column: 4/7;
-}
-
-.p03{
-    grid-column: 7/10;
-}
 
 
 /* awkward page */
@@ -902,10 +960,6 @@ img.noHoverImg {
         right:0;
         z-index:-50;
     }
-/*     
-    .imgAbout{
-        scale:1.11;
-    } */
     
     .meP{
         line-height: 1.5rem;
@@ -916,10 +970,12 @@ img.noHoverImg {
     }
     
     .aboutHeader{
-        grid-column: 2/5;
+        grid-column: 4/8;
         margin-top: 7rem;
         margin-bottom: 1rem;
+        margin-left: 0.5rem;
     }
+
     
     .about-content{
         grid-column: 2/7;
