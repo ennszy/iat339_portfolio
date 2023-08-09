@@ -233,7 +233,7 @@ img.noHoverImg {
 }
 
 .button:hover{
-    background-color: var(--bg-accent);
+    opacity: 0.5;
     /* transition: var(--bg-accent) 0.3s ease; */
 }
 
@@ -449,13 +449,11 @@ textarea{
 .PA_imageScaleDown3{
     scale:0.6;
     margin-left: -7rem;
-    /* margin-top: -9rem; */
 }
 
 .PA_imageScaleDown4{
     scale:0.7;
     margin-left: -4rem;
-    /* margin-top: -9rem; */
 }
 
 .backToWorks{
@@ -479,7 +477,23 @@ textarea{
 }
 
 
+svg.upArrowBackToTop{
+    border: 4px solid var(--text-white);
+    background-color: transparent;
+    border-radius: 4rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
 
+
+.arrowUpCon{
+    grid-column: 2/12;
+    text-align: center;
+}
+
+.backToTopText{
+    margin: 0;
+}
 
 /* contact page */
 
@@ -535,7 +549,7 @@ button.contactButton{
     margin-top: 2rem;
 }
 
-.navPA{
+#navPA{
     background-color: #1C1C1C;
 }
 
@@ -546,21 +560,35 @@ button.contactButton{
 
 
 
+/* new projects page */
+.projectsPage{
+    margin-left: 1rem;
+}
+
+.wHeader{
+    grid-column: 2/-1;
+}
+
+.PP{
+    grid-column: 2/-1;
+}
+
+/* https://www.w3schools.com/howto/howto_css_image_responsive.asp */
+.projectImg{
+    width: 100%;
+    height: auto;
+}
 
 
+.worksH5{
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.worksP{
+    margin-top: 0;
+    /* color: var(--b); */
+}
 
 
 
@@ -569,6 +597,8 @@ button.contactButton{
 
 /* desktop */
 @media screen and (min-width: 62rem) {
+    
+
 
 /* contact page */
 .contactHeaderCon{
@@ -1012,40 +1042,6 @@ img.noHoverImg {
     margin-top: -4rem;
     z-index: -10;
 }
-/* 
-
-.imagesHome-con{
-    grid-column: 2/-1;
-    margin-left: 0.5rem; */
-    /* margin-top: 4rem; */
-    /* margin-left: ; */
-    /* margin-right: auto;
-    width: 50%; */
-
-/* }
-
-.lineArtLarge{
-    margin-top: 4rem;
-}
-
-
-.search{
-    margin-top: 1rem;
-    grid-column: 2/9;
-    padding: 5px;
-    border-radius: 1rem;
-    background-color: #A1BBCB;
-    color: #486877;
-}
-
-.searchIcon{
-    padding-left: 0.5rem;
-}
-
-.pHomeSearch{
-   color: var(--bg-main);
-   margin: 0;
-} */
 
 
 }
@@ -1056,9 +1052,3 @@ img.noHoverImg {
 
 } */
 
-
-/* mobile */
-@media screen and (min-width: 36rem) {
-
-
-}
