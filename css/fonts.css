@@ -13,7 +13,6 @@
     font-weight: normal;
     font-style: normal;
     src: url(../fonts/PPEiko-Medium.otf);
-    /* src: url(../fonts/Quan.woff2)../fonts/Quan.ttf); format('woff2'); */
 }
 
 @font-face {
@@ -47,10 +46,8 @@ h2, .h2:not(.oopsMobileHeader,.introHeader2 ) {
 
 .introHeader2{
     font-family: "PPEiko-Medium";
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     margin-top:1rem;
-    /* margin-bottom: 0.5rem; */
-    /* margin-top: 0.5rem; */
 }
 
 h3, .h3 {
@@ -80,6 +77,11 @@ p {
     /* color: var(--accent-action); */
 }
 
+/* .introP{
+    font-family: "TheSans Light";
+    font-size: 15px;
+} */
+
 
 .Durer{
     font-family: "Durer";
@@ -92,3 +94,4 @@ p {
 .TheSans{
     font-family: "TheSans Light";
 }
+
