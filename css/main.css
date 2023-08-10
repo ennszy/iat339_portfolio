@@ -562,11 +562,11 @@ button.contactButton{
 
 
 .coffeeTableImg{
-    grid-column: 3/-1;
-    scale:0.35;
-    margin-left: 1rem;
+    grid-column: 5/12;
+    width:80%;
+    /* opacity: 0.8; */
+    margin-left: 3rem;
     z-index: -10;
-    margin-top: -10rem;
 }
 
 
@@ -751,10 +751,14 @@ button.contactButton{
 
 
     .coffeeTableImg{
-        grid-column: 9/-1;
-        scale:1;
+        grid-column: 8/-1;
+        margin-top: -9rem;
+        opacity: 0.8;
         z-index: -10;
+        /* width:80%; */
     }
+
+    
 
     /* PA Hoodie */
     .PA_intro{
@@ -1052,9 +1056,4 @@ button.contactButton{
         grid-column: 10/12;
         margin-top: -13rem;
     }
-}
-
-/* tablet */
-@media screen and (min-width: 1208px) {
-
 }
