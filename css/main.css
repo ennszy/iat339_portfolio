@@ -15,9 +15,7 @@ body {
     line-height: 1;
     position: relative;
     color: var(--text-white);
-    /* padding-bottom: 4rem; */
     background: var(--bg-main);
-    /* padding-left: 1rem; */
     z-index: -2;
 }
 
@@ -110,7 +108,7 @@ li a{
 .mainCon{
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
     /* overflow: hidden; */
     /* gap:1rem; */
 }
@@ -324,6 +322,9 @@ img.noHoverImg {
    color: var(--bg-main);
    margin: 0;
    text-align: center;
+   font-family: "TheSans Plain";
+   font-size: 15px;
+   line-height: 1.375;
 }
 
 .introProjDisplay{
@@ -462,7 +463,7 @@ textarea{
     margin-left: -1.5rem;
 }
 
-
+/* arrows */
 svg.upArrowBackToTop{
     border: 3px solid var(--text-white);
     background-color: transparent;
@@ -471,17 +472,52 @@ svg.upArrowBackToTop{
     margin-bottom: 0.5rem;
 }
 
-
 .arrowCon{
     text-align: center;
     z-index: 3;
 }
 
 .rightArrow{
-    grid-column: 9/12;
+    grid-column: 10/12;
     margin-top: 4rem;
     margin-bottom: -6rem;
 }
+
+/* pulsing animation taken from: https://web.dev/learn/css/animations/  */
+.rightArrow.pulser{
+    width: 50px;
+    height: 50px;
+    background: var(--bg-accent2);
+    border-radius: 70%;
+    position: relative;
+}
+
+.pulser::after {
+    animation: pulse 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+}
+  
+@keyframes pulse {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.2;
+    }
+}
+  
+.pulser::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--bg-accent2);
+    border-radius: 70%;
+    z-index: -1;
+}
+
 
 .UpArrow{
     grid-column: 2/12;
@@ -632,295 +668,217 @@ button.contactButton{
 
 
 /* desktop */
-@media screen and (min-width: 62rem) {
-
-/* new projects page */
-
-.wHeader{
-    grid-column: 2/-1;
-}
-
-/* .PP{
-    grid-column: 1/-1;
-} */
-
-/* https://www.w3schools.com/howto/howto_css_image_responsive.asp */
-.projectImg{
-    width: 100%;
-    height: auto;
-}
-
-
-.worksH5{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.worksP{
-    margin-top: 0;
-    /* color: var(--b); */
-}
-
-
-.projectsCon{
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.projectMal{
-    grid-column: 2/7;
-}
-
-.projectTT{
-    grid-column: 2/7;
-}
-
-.projectHoodie{
-    grid-column: 7/12;
-}
-
-.projectObbaki{
-    grid-column: 2/7;
-}
-
-.projectLLF{
-    grid-column: 7/12;
-}
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-/* contact page */
-.contactHeaderCon{
-    grid-column: 2/-1;
-}
-
-.coffeeChat{
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-}
-
-.contactForm{
-    margin-top: 1rem;
-    grid-column: 2/5;
-}
-
-button.contactButton{
-    margin-top: 1rem;   
-}
-
-.contactButtonDiv{
-    grid-column: 2/3;
-}
-
-#payment-topicForm{
-    margin-left: 1rem;
-    padding-right: 0.5rem;
-    background:none;
-    color: var(--bg-accent2);
-    border:none;
-    border-bottom: 2px solid var(--text-white);
-}
-
-
-.coffeeTableImg{
-    grid-column: 9/-1;
-    scale:1;
-    z-index: -10;
-}
-
-/* PA Hoodie */
-
-.PA_intro{
-    grid-column: 2/6;
-}
-
-.topIMG{
-   margin-top: -10rem; 
-}
-
-.PA_collab{
-    grid-column: 2/3;
-}
-
-.PA_contrib{
-    grid-column: 3/4;
-}
-
-.PA_tools{
-    grid-column: 4/5;
-}
-
-.PA_projectImg{
-    grid-column: 8/-1;
-}
-
-.PA_content{
-    grid-column: 2/6;
-}
-
-
-.backToWorks{
-    grid-column: 2/4;
-    scale:0.7;
-    margin-left: -3rem;
-}
-
-/* .PA_projectImg1{
-    grid-column: 2/6;
-} */
-
-.PA_projectImg1{
-    grid-column: 3/7;
-    margin-top: 3rem;
-}
-
-.PA_projectImg2{
-    grid-column: 7/11;
-    margin-top: 3rem;
-}
-
-
-.arrowUpCon{
-    grid-column: 11/12;
-    text-align: center;
-    margin-top: 5rem;
-}
-
-
-/* styleguide */
-
-/* .styleCenter{
-    text-align: center;
-}
-
-
-.styleContent{
-    grid-column: 2/12;
-}
-
-.styleSubHeaders{
-    grid-column: 2/12;
-}
-
-.headingLeft{
-    grid-column: 2/5;
-    margin:0rem;
-}
-
-.headingRight{
-    grid-column: 5/12;
-    margin:0rem;
-} */
-
-.artDirectionImg{
-    scale: 1.5;
-    margin-left: 50rem;
-    margin-top: 3rem;
-}
-
-.Durer-con{
-    margin-left: 45rem;
-    margin-top: 3rem;
-}
-
-.Eiko-con{
-    margin-left: 45rem;
-    margin-top: 3rem;
-}
-
-.TheSans-con{
-    margin-left: 45rem;
-    margin-top: 3rem;
-}
-
-.palette{
-    scale:1.5;
-    margin-left: 50rem;
-    margin-top: 3rem;
-}
-
-.styleSubHeaders{
-    grid-column: 2/12;
-}
-
-.headingLeft{
-    grid-column: 8;
-    margin:0rem;
-}
-
-.headingRight{
-    grid-column: 9/12;
-    margin:0rem;
-}
-
-.Pstyle{
-    margin-left: 45rem;
-    /* margin-top: 3rem; */
-}
-
-
-
-
-
-/* awkward page */
-
-img.noHoverImg {
-    margin-bottom: 1rem;
-    margin-top: -2rem;
-}
-
-
-.awkwardContent{
-    grid-column: 2/6;
-    text-align: left;
-}
-
-.awkwardText{
-    margin-top: 5rem;
-}
-
-.cloudCharacter{
-    scale:1.14;
-    margin-top: 3rem;
-    grid-column: 8/11;
-}
-
-.oopsMobileHeader{
-    font-family: "Durer";
-    font-size: 4rem;
-}
-
-
-
-
-/*
-
-.button{
-    border: 2px solid var(--text-white);
-    background-color: transparent;
-    text-align: center;
-    padding: 1rem 1.5rem;
-    border-radius: 8rem;
-    color: var(--text-white);
-}
-
-.cloudCharacter{
-    scale: 0.3;
-    margin-top: -13rem;
-} */
-
-
+@media screen and (min-width: 72rem) {
+
+    /* works page*/
+    .wHeader{
+        grid-column: 2/-1;
+    }
+
+    /* https://www.w3schools.com/howto/howto_css_image_responsive.asp */
+    .projectImg{
+        width: 100%;
+        height: auto;
+    }
+
+
+    .worksH5{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .worksP{
+        margin-top: 0;
+        /* color: var(--b); */
+    }
+
+    .projectsCon{
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .projectMal{
+        grid-column: 2/7;
+    }
+
+    .projectTT{
+        grid-column: 2/7;
+    }
+
+    .projectHoodie{
+        grid-column: 7/12;
+    }
+
+    .projectObbaki{
+        grid-column: 2/7;
+    }
+
+    .projectLLF{
+        grid-column: 7/12;
+    }
+
+    /* contact page */
+    .contactHeaderCon{
+        grid-column: 2/-1;
+    }
+
+    .coffeeChat{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .contactForm{
+        margin-top: 1rem;
+        grid-column: 2/5;
+    }
+
+    button.contactButton{
+        margin-top: 1rem;   
+    }
+
+    .contactButtonDiv{
+        grid-column: 2/3;
+    }
+
+    #payment-topicForm{
+        margin-left: 1rem;
+        padding-right: 0.5rem;
+        background:none;
+        color: var(--bg-accent2);
+        border:none;
+        border-bottom: 2px solid var(--text-white);
+    }
+
+
+    .coffeeTableImg{
+        grid-column: 9/-1;
+        scale:1;
+        z-index: -10;
+    }
+
+    /* PA Hoodie */
+    .PA_intro{
+        grid-column: 2/6;
+    }
+
+    .topIMG{
+    margin-top: -10rem; 
+    }
+
+    .PA_collab{
+        grid-column: 2/3;
+    }
+
+    .PA_contrib{
+        grid-column: 3/4;
+    }
+
+    .PA_tools{
+        grid-column: 4/5;
+    }
+
+    .PA_projectImg{
+        grid-column: 8/-1;
+    }
+
+    .PA_content{
+        grid-column: 2/6;
+    }
+
+    .backToWorks{
+        grid-column: 2/4;
+        scale:0.7;
+        margin-left: -3rem;
+    }
+
+    .PA_projectImg1{
+        grid-column: 3/7;
+        margin-top: 3rem;
+    }
+
+    .PA_projectImg2{
+        grid-column: 7/11;
+        margin-top: 3rem;
+    }
+
+
+    .arrowUpCon{
+        grid-column: 11/12;
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+    .artDirectionImg{
+        scale: 1.5;
+        margin-left: 50rem;
+        margin-top: 3rem;
+    }
+
+    .Durer-con{
+        margin-left: 45rem;
+        margin-top: 3rem;
+    }
+
+    .Eiko-con{
+        margin-left: 45rem;
+        margin-top: 3rem;
+    }
+
+    .TheSans-con{
+        margin-left: 45rem;
+        margin-top: 3rem;
+    }
+
+    .palette{
+        scale:1.5;
+        margin-left: 50rem;
+        margin-top: 3rem;
+    }
+
+    .styleSubHeaders{
+        grid-column: 2/12;
+    }
+
+    .headingLeft{
+        grid-column: 8;
+        margin:0rem;
+    }
+
+    .headingRight{
+        grid-column: 9/12;
+        margin:0rem;
+    }
+
+    .Pstyle{
+        margin-left: 45rem;
+    }
+
+    /* awkward page */
+    img.noHoverImg {
+        margin-bottom: 1rem;
+        margin-top: -2rem;
+    }
+
+
+    .awkwardContent{
+        grid-column: 2/6;
+        text-align: left;
+    }
+
+    .awkwardText{
+        margin-top: 5rem;
+    }
+
+    .cloudCharacter{
+        scale:1.14;
+        margin-top: 3rem;
+        grid-column: 8/11;
+    }
+
+    .oopsMobileHeader{
+        font-family: "Durer";
+        font-size: 4rem;
+    }
 
 
     /* about page */
@@ -966,163 +924,137 @@ img.noHoverImg {
         margin-top: 0.5rem;
     }
 
-/* footer */
-.footerP{
-    color: var(--accent-action);
-    grid-column: 11/-1;
-    text-align: left;
-    margin-top: -1.5rem;
-}
+    /* footer */
+    .footerP{
+        color: var(--accent-action);
+        grid-column: 11/-1;
+        text-align: left;
+        margin-top: -1.5rem;
+    }
 
-.findMeAt{
-    color: var(--accent-action);
-    margin: 0;
-    font-size: 14px;
-}
-
-
-.styleguidePen{
-    grid-column: 2/12;
-    text-align: left;
-    padding-top: 1rem;
-}
-
-.linkedIn{
-    grid-column: 2/12;
-    text-align: left;
-    padding-top: 1rem;
-}
-
-.Instagram{
-    grid-column: 2/12;
-    text-align: left;
-    padding-top: 1rem;
-}
-
-.pinterest{
-    grid-column: 2/12;
-    text-align: left;
-    padding-top: 1rem;
-}
+    .findMeAt{
+        color: var(--accent-action);
+        margin: 0;
+        font-size: 14px;
+    }
 
 
-/* resume Deskstop */
-.resume-introContent{
-    grid-column: 2/5;
-}
+    .styleguidePen{
+        grid-column: 2/12;
+        text-align: left;
+        padding-top: 1rem;
+    }
 
-.resume-imgCon{
-    scale:0.75;
-    grid-column: 5/-1;
-    margin-bottom: 5px;
-    /* overflow: scroll; */
-    /* padding-bottom: 6rem; */
-    /* margin-bottom: 0.5rem; */
-}
+    .linkedIn{
+        grid-column: 2/12;
+        text-align: left;
+        padding-top: 1rem;
+    }
 
-.extraInfo{
-    grid-column: 2/5;
-} 
+    .Instagram{
+        grid-column: 2/12;
+        text-align: left;
+        padding-top: 1rem;
+    }
 
-
-/* mainPAGE */
-.contentHome-con{
-    grid-column: 2/8;
-    text-align: left;
-}
-
-.imagesHome-con{
-    grid-column: 4/10;
-    z-index: -2;
-    margin-top: -8rem;
-}
-
-.homepageCon{
-    margin-right: 1rem;
-}
-
-.search{
-    margin-top: 1rem;
-    grid-column: 2/5;
-    padding: 5px;
-    border-radius: 1rem;
-    background-color: var(--bg-accent2);
-}
-
-.searchIcon{
-    padding-left: 0.5rem;
-}
-
-.pHomeSearch{
-   color: var(--bg-main);
-   margin: 0;
-   text-align: left;
-}
-
-.rightArrow{
-    grid-column: 10/12;
-    scale: 1.2;
-}
-
-.introProjDisplay{
-    display:block;
-    z-index: -10;
-    opacity: 0.5;
-    scale: 0.7;
-}
-
-.homeIntroP{
-    scale: 1.3;
-    margin-left: 5.5rem;
-}
-
-.homeProjLLF{
-    grid-column: 2/4;
-    margin-top: 3rem;
-}
-
-.homeProjTidyTunes{
-    grid-column: 3/6;
-    margin-top: -10rem;
-}
-
-.homeProjHoodie{
-    grid-column: 8/11;
-    margin-top: -3rem;
-}
-
-.homeProjObakki{
-    grid-column: 10/12;
-    margin-top: -13rem;
-}
-
-/* 
-
-.homeProjHoodie{
-    grid-column: 10;
-    margin-top: 4rem;
-    z-index: -10;
-    scale: 0.8;
-}
-
-.homeProjTidyTunes{
-    grid-column: 2;
-    margin-top: 1rem;
-    z-index: -10;
-    /* scale: 0.8; */
-/* }
-
-.homeProjLLF{
-    grid-column: 5;
-    margin-top: -4rem;
-    z-index: -10;
-} */ 
+    .pinterest{
+        grid-column: 2/12;
+        text-align: left;
+        padding-top: 1rem;
+    }
 
 
+    /* resume Deskstop */
+    .resume-introContent{
+        grid-column: 2/5;
+    }
+
+    .resume-imgCon{
+        scale:0.75;
+        grid-column: 5/-1;
+        margin-bottom: 5px;
+    }
+
+    .extraInfo{
+        grid-column: 2/5;
+    } 
+
+
+    /* mainPAGE */
+    .contentHome-con{
+        grid-column: 2/8;
+        text-align: left;
+    }
+
+    .imagesHome-con{
+        grid-column: 5/10;
+        z-index: -2;
+        margin-top: -8rem;
+    }
+
+    .homepageCon{
+        margin-right: 1rem;
+    }
+
+    .homeIntroP{
+        font-family: "TheSans Light";
+        font-size: 20px;
+        line-height: 1.375;
+    } 
+
+    .search{
+        margin-top: 1rem;
+        grid-column: 2/5;
+        padding: 5px;
+        border-radius: 1rem;
+        background-color: var(--bg-accent2);
+    }
+
+    .searchIcon{
+        padding-left: 0.5rem;
+    }
+
+    .pHomeSearch{
+        color: var(--bg-main);
+        margin: 0;
+        text-align: center;
+    }
+
+    /* right arrow */
+    .rightArrow{
+        grid-column: 10/12;
+        scale: 1.2;
+    }
+
+    .introProjDisplay{
+        display:block;
+        z-index: -10;
+        opacity: 0.5;
+        scale: 0.7;
+    }
+
+    .homeProjLLF{
+        grid-column: 2/4;
+        margin-top: 5rem;
+    }
+
+    .homeProjTidyTunes{
+        grid-column: 3/6;
+        margin-top: -10rem;
+    }
+
+    .homeProjHoodie{
+        grid-column: 8/11;
+        margin-top: -1rem;
+    }
+
+    .homeProjObakki{
+        grid-column: 10/12;
+        margin-top: -13rem;
+    }
 }
 
 /* tablet */
-/* @media screen and (min-width: 48rem) {
+@media screen and (min-width: 1208px) {
 
-
-} */
+}
