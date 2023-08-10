@@ -44,7 +44,6 @@
     <main>
         
         <section id="">
-
             
             <div class="mainCon processHoodie">
                 <button class="button backToWorks" onclick="location.href='works.html'" type="submit">back to works</button> 
@@ -88,12 +87,12 @@
                 <div class="PA_content">
 
                     <h3>What is it?</h3>
-                    <p>Our device aims to create a fun interactive clean up environment in the household or in a learning space, for children ages 2 to 6. The device will teach children to continue good habits of cleaning after themselves. Our device will positively encourage children to see cleaning up as a game rather than a chore. TidyTunes can be placed in indoor play areas eg. bedroom, living room, classrooms and interacted individually or as a group. We have set the duration of playtime and clean up to be manually inputed by the user (the guardians for the children). </p>
+                    <p>Our device aims to create a fun interactive clean up environment in the household or in a learning space, for children ages 2 to 6. The device will teach children to continue good habits of cleaning after themselves. Our device will positively encourage children to see cleaning up as a game rather than a chore. TidyTunes can be placed in indoor play areas eg. bedroom, living room, classrooms and interacted individually or as a group. We have set the duration of playtime and clean up to be manually inputted by the user (the guardians for the children). </p>
                 </div>
 
                 <div class="PA_projectImg">
-                    <img class="PA_imageScaleDown4" src="imgs/PATidy01.png" alt="project">
-                    <figcaption>The creators of the TidyTunes</figcaption>
+                    <img class="PA_imageScaleDown" src="imgs/PATidy01.png" alt="project">
+                    <figcaption>The creators of TidyTunes</figcaption>
                 </div>
         
                 <div class="PA_content">
@@ -106,19 +105,45 @@
                 </div>
                 
                 <div class="PA_projectImg">
-                    <img class="PA_imageScaleDown3" src="imgs/PATidy02.png" alt="project">
+                    <img class="PA_imageScaleDown" src="imgs/PATidy02.png" alt="project">
                     <figcaption>drawing of the setup of processing to arduino to device</figcaption>
                 </div>
 
                 <div class="PA_content">
                     <h3>Strategy: Prototyping + delegating roles</h3>
-                    <p>The first step was creating a prototype of our device. We had two pieces, the base and the basket. Next was to create the processing and Arduino code to be implemented. During this step we had delegated responsibilities based on skillsets and what each team member wanted to gain and take charge. </p>
+                    <p>The first step was creating a prototype of our device. We had two pieces, the base and the basket. We then create the processing and Arduino code to be implemented into the base and basket. During this step we had delegated responsibilities based on skillsets and what each team member wanted to gain and take lead on. I focused on the design aspect, doing slide decks, documentations, exhibition set up, poster graphics, game interface and the visual aesthetic of our device.</p>
                 </div>
 
                 <div class="PA_projectImg">
-                    <img class="" src="imgs/PATidy03.jpg" alt="project">
+                    <img class="PA_imageScaleDown" src="imgs/PATidy03.jpg" alt="project">
                     <figcaption>Implementation of processing</figcaption>
                 </div>
+
+                <div class="PA_content">
+                    <h3>Strategy: User Experience</h3>
+                    <p>we provided manual control for timing for the guardian of the child. Taking into consideration of the users being children, we decided to incorporate sound (using music) and visuals (using flashing LED lights) to grab the child’s attention of when its time to clean up.
+                    </p>
+                </div>
+
+                <div class="PA_projectImg">
+                    <img class="PA_imageScaleDown" src="imgs/PATidy04.png" alt="project">
+                    <figcaption>steps of the user journey</figcaption>
+                </div>
+
+
+                <div class="PA_content">
+                    <h3>Strategy: Processing & Arduino </h3>
+                    <p>Within our processing code, we established if/else statements on the cases of each situation. (1) If the basket is off the base, then the playtime counter starts and once timer reaches zero, music plays and lights flash. (2) Once the playtime timer reaches zero, start the clean up countdown and when the timer reaches zero, the “Hooray” interface will appear. 
+                        <br>
+                    we also had red and green LED to visualize if and when the basket was on the base. Regarding the Arduino we used a NRFs and Bluetooth Arduino for the basket to connect to the processing code & a force sensor for the base to recognized the if the basket was full based on the weight of placed on the force sensor.
+                    </p>
+                </div>
+
+                <div class="PA_projectImg">
+                    <img class="PA_imageScaleDown" src="imgs/PATidy05.png" alt="project">
+                    <figcaption>behind the scenes: set up of sensors and LEDs</figcaption>
+                </div>
+
 
                 <div class="PA_content">
                     <h3>Strategy: Visual Design</h3>
@@ -127,37 +152,61 @@
                 </div>
 
                 <div class="PA_projectImg">
-                    <img class="" src="imgs/PATidy04.png" alt="project">
-                    <figcaption>front and backside of design on model</figcaption>
+                    <img class="PA_imageScaleDown" src="imgs/PATidy06.png" alt="project">
+                    <figcaption>game interfaces of TidyTunes on the computer (home, notifcation, rewards and feedback)</figcaption>
                 </div>
 
 
                 <div class="PA_content">
-                    <h3><a target="_blank" href="https://youtu.be/QBAe5NFP4zg">Result: A viable product</a></h3>
-                    <p>Overall, I believe our team had created a viable device that could be implemented in the future for children if we do decide to continue this project further. We received positive feedback from our peers, professor, teacher assistant and the audience during our exhibition presentation.<b> Here is a video of our project https://youtu.be/QBAe5NFP4zg</b>  
-                        </p>
+                    <h3>Strategy: Exhibition Set up</h3>
+                    <p>I worked on setting up our table for our project exhibition. To elevate the children aspect, we had a children play mat on the side with toys inside the basket. This enhances the users experience taking them back to childhood. At our table, we brought stuffed animals and Lego blocks as set props to display a children setting and atmosphere with our device.  
+                    </p>
                 </div>
-                
+
                 <div class="PA_projectImg">
-                    <img class="" src="imgs/PATidy05.png" alt="project">
+                    <img class="PA_imageScaleDown" src="imgs/PATidy07.png" alt="project">
+                    <figcaption>exhibition set up of our table in the mezzanine</figcaption>
+                </div>
+
+                <div class="PA_content">
+                    <h3>Takeaways</h3>
+                    <p> I think if we were to continue this project further, it would be to have the device made into production or to sell the idea to make it happen. One main challenge we had was the bluetooth connection for the Arduino, we ideated to use NRF connection however, we still struggled with a finicky connection. 
+                        <br>
+                    What I learned from this project was an interest in product design. This project illustrated the benefits of diversity in group projects; TidyTunes could not have been done without every skillset of my teammates and our collaboration of ideas. Working in groups with all of us coming from different backgrounds and experiences allowed us to bounce ideas off each other and ideate solutions. Through this project, when I was designing the game interface, I realized how important it was to design not only for the client, but also for yourself and your team. When designing the interface, I took into consideration of the developers- keeping in mind how each design would work when written in code and how I can make it easier for the development team. 
+                    </p>
+                </div>
+
+                <div class="PA_projectImg">
+                    <h3><a target="_blank" href="https://youtu.be/QBAe5NFP4zg">Result: A viable product</a></h3>
+                    <p>
+                        Overall, I believe our team had created a viable device that could be implemented in the future for children if we do decide to continue this project further. We received positive feedback from our peers, professor, teacher assistant and the audience during our exhibition presentation.  
+                        <b> Here is a video of our project <a target="_blank" href="https://youtu.be/QBAe5NFP4zg">https://youtu.be/QBAe5NFP4zg</a></b>  
+                    </p>
+                </div>
+
+                <div class="PA_projectImg1">
+                    <img class="PA_imageScaleDown" src="imgs/PATidy08.png" alt="project">
                     <figcaption>Poster design of TidyTunes Device [01 of 02]</figcaption>
-                    <img class="" src="imgs/PATidy06.png" alt="project">
+                </div>
+
+                <div class="PA_projectImg2">
+                    <img class="PA_imageScaleDown" src="imgs/PATidy09.png" alt="project">
                     <figcaption>Poster design of TidyTunes Device [02 of 02]</figcaption>
                 </div>
 
-
-                <div class="PA_projectImg">
-                    <img class="" src="imgs/PATidy07.png" alt="project">
-                    <figcaption>our device in the exhibition</figcaption>
+                <!-- back to top arrow -->
+                <div class="arrowUpCon">
+                    <a target="_self" href="#navPA">
+                            <svg class="upArrowBackToTop" width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 31L32 13L50 31M32 15.5L32 52" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                            <h4 class="backToTopText">back to top</h4>
+                    <!-- </a> -->
                 </div>
+            </div>
 
-        
-
-                <!-- <div class="PA_content">
-                    <h3>Feedback</h3>
-                    <p></p>
-                </div>
-             -->
+    
 
 
             </div>
