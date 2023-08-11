@@ -35,17 +35,18 @@ a:hover, .a:focus, .a:active{
 }
 
 img{
-    transition: background-color 0.5s ease-out;
+    background-color: transparent;
+    transition: background-color opacity 2s ease-in-out;
 }
 
-img :not(.noHoverImg):hover, img:not(.noHoverImg):focus, img:not(.noHoverImg):active{
+/* grow on hover transition: https://travis.media/how-to-make-an-item-grow-on-hover-with-css/ */
+img:not(.noHoverImg):hover, img:not(.noHoverImg):focus, img:not(.noHoverImg):active{
     background-color: var(--bg-accent);
-    opacity: 1;
+    opacity: 0.5;
+    transform: scale(1.05);
 }
-
 
 header{
-    /* border-bottom: 1px solid var(--text-white); */
     padding-bottom: 1rem;
 }
 
@@ -232,9 +233,7 @@ img.noHoverImg {
 }
 
 .button:hover{
-    /* opacity: 0.5; */
     background-color: var(--bg-accent);
-    /* transition: var(--bg-accent) 0.3s ease; */
 }
 
 .cloudCharacter{
