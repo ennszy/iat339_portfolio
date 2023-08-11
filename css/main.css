@@ -178,7 +178,6 @@ footer{
     margin-left: -0.5rem;
     z-index: 2;
     margin-top: -5rem;
-    /* scale: 2; */
 }
 
 .aboutMeH3{
@@ -186,8 +185,7 @@ footer{
 }
 
 .about-content{
-    grid-column: 1/12;
-    margin-left: 1rem;
+    grid-column: 2/12;
     margin-top: 0rem;
 }
 
@@ -197,13 +195,11 @@ footer{
 
 .aboutButton1{
     grid-column: 2/6;
-    /* margin-top: 0rem; */
-    margin-left: -1rem;
+    margin-left: 1rem;
 }
 
 .aboutButton2{
     grid-column: 6/11;
-    /* margin-top: 0rem; */
     margin-left: 1rem;
 }
 
@@ -926,7 +922,7 @@ button.contactButton{
     .aboutButton1{
         grid-column: 2/4;
         margin-top: 0.5rem;
-        margin-left: 1rem;
+        margin-left: 0.5rem;
     }
     
     .aboutButton2{
