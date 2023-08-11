@@ -641,14 +641,17 @@ button.contactButton{
 
 .color-accent{
     background-color: var(--bg-accent2);
+    color: var(--bg-main);
 }
 
 .color-accent2{
     background-color: var(--accent-action);
+    color: var(--bg-main);
 }
 
 .color-white{
     background-color: var(--text-white);
+    color: var(--bg-main);
 }
 
 .color-black{
