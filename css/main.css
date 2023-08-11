@@ -268,11 +268,17 @@ img.noHoverImg {
     margin-bottom: -0.5rem;
 }
 
-.resume-imgCon{
-    scale:0.4;
+.resumeImgCon{
+    /* scale:0.4;
     margin-left: 1rem;
     margin-top:-19rem;
-    margin-bottom:-19rem;
+    margin-bottom:-19rem; */
+    grid-column:2/-1;
+    margin-top: 2rem;
+}
+
+.resumeIMG{
+    width: 90%;
 }
 
 .inv {
@@ -973,10 +979,13 @@ button.contactButton{
         grid-column: 2/5;
     }
 
-    .resume-imgCon{
-        scale:0.75;
-        grid-column: 5/-1;
-        margin-bottom: 5px;
+    .resumeImgCon{
+        grid-column: 6/-1;
+        margin-top: -11rem;
+    }
+    
+    .resumeIMG{
+        width: 90%;
     }
 
     .extraInfo{
