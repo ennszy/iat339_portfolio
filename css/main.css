@@ -40,7 +40,7 @@ img{
 }
 
 /* grow on hover transition: https://travis.media/how-to-make-an-item-grow-on-hover-with-css/ */
-img:not(.noHoverImg):hover, img:not(.noHoverImg):focus, img:not(.noHoverImg):active{
+img:not(.noHoverImg, .noHoverImgStyle):hover, img:not(.noHoverImg, .noHoverImgStyle):focus, img:not(.noHoverImg, .noHoverImgStyle):active{
     background-color: var(--bg-accent);
     opacity: 0.5;
     transform: scale(1.05);
@@ -82,13 +82,6 @@ hr :not(.footerHR){
 /* nav bar items */
 ul{
     list-style-type: none;
-    /* margin:0;
-    padding: 0; */
-    /* overflow:0; */
-    /* position: relative; */
-    /* top:0;
-    width:100%; */
-    /* grid-column:; */
     margin-right:5rem;
 }
 
@@ -101,7 +94,6 @@ li a{
     color: var(--text-white);
     padding: 14px 16px;
     text-decoration: none;
-    /* margin-bottom: 2rem; */
 }
 
 
@@ -110,8 +102,6 @@ li a{
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     padding-bottom: 1rem;
-    /* overflow: hidden; */
-    /* gap:1rem; */
 }
 
 .footer-con{
@@ -128,7 +118,6 @@ footer{
 
 .footerP{
     color: var(--accent-action);
-    /* margin-top: -2rem; */
     grid-column: 1/12;
     text-align: center;
 }
@@ -141,7 +130,6 @@ footer{
 
 
 .styleguidePen{
-    /* grid-column: 4/12; */
     grid-column: 1/12;
     text-align: center;
     padding-top: 1rem;
@@ -248,9 +236,7 @@ img.noHoverImg {
 }
 
 
-
 /* resume */
-
 .resume-introContent{
     grid-column: 2/-1;
 }
@@ -264,10 +250,6 @@ img.noHoverImg {
 }
 
 .resumeImgCon{
-    /* scale:0.4;
-    margin-left: 1rem;
-    margin-top:-19rem;
-    margin-bottom:-19rem; */
     grid-column:2/-1;
     margin-top: 2rem;
 }
@@ -296,7 +278,6 @@ img.noHoverImg {
     grid-column: 2/-1;
     margin-left: 0.5rem;
     z-index: -2;
-    /* margin-top: -4rem; */
 }
 
 .lineArtLarge{
@@ -335,11 +316,9 @@ img.noHoverImg {
 
 
 /* styleguide */
-
 .styleCenter{
     text-align: center;
 }
-
 
 .styleContent{
     grid-column: 2/12;
@@ -396,7 +375,6 @@ textarea{
 
 
 /* process analysis */
-
 .processHoodie{
     margin-right: 1rem;
 }
@@ -442,7 +420,6 @@ textarea{
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
-
 
 .backToWorks{
     grid-column: 2/7;
@@ -529,7 +506,6 @@ svg.upArrowBackToTop{
 }
 
 /* contact page */
-
 .contactHeaderCon{
     grid-column: 2/-1;
 }
@@ -565,11 +541,9 @@ button.contactButton{
 .coffeeTableImg{
     grid-column: 5/12;
     width:80%;
-    /* opacity: 0.8; */
     margin-left: 3rem;
     z-index: -10;
 }
-
 
 
 .processHoodie{
@@ -586,14 +560,7 @@ button.contactButton{
     background-color: #1C1C1C;
 }
 
-/* end of mobile */
-
-
-
-
-
 /* new projects page */
-
 .wHeader{
     grid-column: 2/-1;
 }
@@ -608,7 +575,6 @@ button.contactButton{
     height: auto;
 }
 
-
 .worksH5{
     margin-top: 0;
     margin-bottom: 0;
@@ -618,7 +584,6 @@ button.contactButton{
     margin-top: 0;
     /* color: var(--b); */
 }
-
 
 .projectsCon{
     margin-top: 1rem;
@@ -646,17 +611,49 @@ button.contactButton{
 }
 
 
+/* styleguide */
 
+.styleContent{
+    text-align: center;
+}
 
+.styleImg{
+    width: 90%;
+    grid-column: 2/-1;
+}
 
+/* color Palette */
+.colorPalText{
+    margin-left: 0.5rem;
+}
 
+.boxSize{
+    padding-top: 2rem;
+}
 
+.color-main{
+    border:2px solid var(--text-white);
+}
 
+.color-secondary{
+    background-color: var(--bg-accent);
+}
 
+.color-accent{
+    background-color: var(--bg-accent2);
+}
 
+.color-accent2{
+    background-color: var(--accent-action);
+}
 
+.color-white{
+    background-color: var(--text-white);
+}
 
-
+.color-black{
+    background-color: var(--text-black);
+}
 
 
 
@@ -682,7 +679,6 @@ button.contactButton{
         height: auto;
     }
 
-
     .worksH5{
         margin-top: 0;
         margin-bottom: 0;
@@ -690,7 +686,6 @@ button.contactButton{
 
     .worksP{
         margin-top: 0;
-        /* color: var(--b); */
     }
 
     .projectsCon{
@@ -756,7 +751,6 @@ button.contactButton{
         margin-top: -9rem;
         opacity: 0.8;
         z-index: -10;
-        /* width:80%; */
     }
 
     
@@ -805,7 +799,6 @@ button.contactButton{
         grid-column: 7/11;
         margin-top: 3rem;
     }
-
 
     .arrowUpCon{
         grid-column: 11/12;
@@ -864,7 +857,6 @@ button.contactButton{
         margin-top: -2rem;
     }
 
-
     .awkwardContent{
         grid-column: 2/6;
         text-align: left;
@@ -915,7 +907,6 @@ button.contactButton{
     
     .about-content{
         grid-column: 2/7;
-        /* margin-top: 0rem; */
     }
 
     .aboutButton1{
@@ -942,7 +933,6 @@ button.contactButton{
         margin: 0;
         font-size: 14px;
     }
-
 
     .styleguidePen{
         grid-column: 2/12;
