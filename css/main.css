@@ -1,23 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  CSS variables learned from Mozilla docs
     https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 :root {
@@ -332,11 +313,6 @@ img.noHoverImg {
     display: none;
 }
 
-
-
-
-
-
 input{
     outline: 0;
     border-width: 0 0 0.125rem;
@@ -369,8 +345,6 @@ textarea{
     color: var(--bg-accent2);
     opacity: 0.5;
   }
-
-
 
 /* process analysis */
 .processHoodie{
@@ -815,15 +789,12 @@ button.contactButton{
         border-bottom: 2px solid var(--text-white);
     }
 
-
     .coffeeTableImg{
         grid-column: 8/-1;
         margin-top: -9rem;
         opacity: 0.8;
         z-index: -10;
     }
-
-    
 
     /* PA Hoodie */
     .PA_intro{
@@ -876,7 +847,6 @@ button.contactButton{
         margin-top: 5rem;
     }
 
-
     /* awkward page */
     img.noHoverImg {
         margin-bottom: 1rem;
@@ -902,7 +872,6 @@ button.contactButton{
         font-family: "Durer";
         font-size: 4rem;
     }
-
 
     /* about page */
     .aboutPageBG{
@@ -930,7 +899,6 @@ button.contactButton{
         margin-left: 0.5rem;
     }
 
-    
     .about-content{
         grid-column: 2/7;
     }
@@ -1002,7 +970,6 @@ button.contactButton{
     .extraInfo{
         grid-column: 2/5;
     } 
-
 
     /* mainPAGE */
     .contentHome-con{
@@ -1076,41 +1043,37 @@ button.contactButton{
         margin-top: -13rem;
     }
 
+    /* styleguide */
+    .styleCenter{
+        text-align: center;
+    }
 
-/* styleguide */
-.styleCenter{
-    text-align: center;
-}
+    .headingLeft{
+        grid-column: 1/5;
+    }
 
-.headingLeft{
-    grid-column: 1/5;
-}
+    .headingRight{
+        grid-column: 5/12;
+        margin-top: 15px;
+        margin-bottom: 2rem;
+    }
 
-.headingRight{
-    grid-column: 5/12;
-    margin-top: 15px;
-    margin-bottom: 2rem;
+    .Branding{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 
-}
+    .styleContent{
+        text-align: left;
+        grid-column: 2/-1;
+    }
 
-.Branding{
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
+    .styleImg{
+        grid-column: 7/12;
+    }
 
-.styleContent{
-    text-align: left;
-    grid-column: 2/-1;
-}
-
-.styleImg{
-    grid-column: 7/12;
-}
-
-.centeredOnes{
-    text-align: left;
-    grid-column: 7/12;
-}
-
-
+    .centeredOnes{
+        text-align: left;
+        grid-column: 7/12;
+    }
 }
