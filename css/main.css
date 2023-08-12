@@ -315,28 +315,7 @@ img.noHoverImg {
 
 
 
-/* styleguide */
-.styleCenter{
-    text-align: center;
-}
 
-.styleContent{
-    grid-column: 2/12;
-}
-
-.styleSubHeaders{
-    grid-column: 2/12;
-}
-
-.headingLeft{
-    grid-column: 2/5;
-    margin:0rem;
-}
-
-.headingRight{
-    grid-column: 5/12;
-    margin:0rem;
-}
 
 
 input{
@@ -612,51 +591,134 @@ button.contactButton{
 
 
 /* styleguide */
-
-.styleContent{
+.styleCenter{
     text-align: center;
 }
 
+/* .styleSubHeaders{
+    grid-column: 2/12;
+} */
+
+.headingLeft{
+    grid-column: 1/5;
+}
+
+.headingRight{
+    grid-column: 5/12;
+    margin-top: 15px;
+    margin-bottom: 2rem;
+
+}
+
+.Branding{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.styleContent{
+    text-align: center;
+    grid-column: 2/12;
+}
+
 .styleImg{
-    width: 90%;
-    grid-column: 2/-1;
+    grid-column: 1/-1;
+}
+
+.centeredOnes{
+    text-align: center;
+    grid-column: 2/12;
+    /* margin-top: 0.5rem; */
+}
+
+.imgArtD{
+    width: 100%;
 }
 
 /* color Palette */
 .colorPalText{
-    margin-left: 0.5rem;
+    margin-top: 0.5rem;
 }
 
-.boxSize{
+/* .boxSize{
     padding-top: 2rem;
+} */
+
+
+
+
+
+.flipCard{
+    perspective: 1000px;
+    margin-bottom: 0.5rem;
 }
 
-.color-main{
+.mutedBlue{
+    background-color: transparent;
     border:2px solid var(--text-white);
+    height: 150px;
 }
 
-.color-secondary{
-    background-color: var(--bg-accent);
-}
-
-.color-accent{
+.paleBlue{
     background-color: var(--bg-accent2);
     color: var(--bg-main);
+    height: 110px;
 }
 
-.color-accent2{
+.beigeCream{
     background-color: var(--accent-action);
     color: var(--bg-main);
+    height: 110px;
 }
 
-.color-white{
+.ponyoBlue{
+    background-color: var(--bg-accent);
+    height: 70px;
+}
+
+.textWhite{
     background-color: var(--text-white);
     color: var(--bg-main);
+    height: 70px;
 }
 
-.color-black{
+.textBlack{
     background-color: var(--text-black);
+    height: 70px;
 }
+
+
+
+.flipCard-Inner {
+    position: relative;
+    /* width: 100%;
+    height: 100%; */
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  .flipCard:hover .flipCard-Inner {
+    transform: rotateY(180deg);
+  }
+
+  .flipCard-front,
+  .flipCard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .flipCard-front {
+    background-color: transparent;
+    /* color: var(--text-white); */
+  }
+  .flipCard-back {
+    /* color: var(--text-white); */
+    transform: rotateY(180deg);
+  }
+
+
+
+
 
 
 
@@ -815,21 +877,6 @@ button.contactButton{
         margin-top: 3rem;
     }
 
-    .Durer-con{
-        margin-left: 45rem;
-        margin-top: 3rem;
-    }
-
-    .Eiko-con{
-        margin-left: 45rem;
-        margin-top: 3rem;
-    }
-
-    .TheSans-con{
-        margin-left: 45rem;
-        margin-top: 3rem;
-    }
-
     .palette{
         scale:1.5;
         margin-left: 50rem;
@@ -848,10 +895,6 @@ button.contactButton{
     .headingRight{
         grid-column: 9/12;
         margin:0rem;
-    }
-
-    .Pstyle{
-        margin-left: 45rem;
     }
 
     /* awkward page */
@@ -1053,4 +1096,47 @@ button.contactButton{
         grid-column: 10/12;
         margin-top: -13rem;
     }
+
+
+/* styleguide */
+.styleCenter{
+    text-align: center;
+}
+
+.headingLeft{
+    grid-column: 1/5;
+}
+
+.headingRight{
+    grid-column: 5/12;
+    margin-top: 15px;
+    margin-bottom: 2rem;
+
+}
+
+.Branding{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.styleContent{
+    text-align: left;
+    grid-column: 2/-1;
+}
+
+.styleImg{
+    grid-column: 7/12;
+}
+
+.centeredOnes{
+    text-align: left;
+    grid-column: 7/12;
+}
+
+
+
+
+
+
+
 }
