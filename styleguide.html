@@ -16,24 +16,20 @@
         <a class="myResume" target = "_self" href="./homepage.html">
             <img class="lineArtNav" src = "imgs/lineArtSmall.png" alt="lineArt">
         </a>
-
-        <div class="">
-            <div class="">
-                <div class="">
-                    <ul>
-                        <li>
-                            <a href="works.html" onclick="closeMenu()">works</a>
-                        </li>
-                        <li>
-                            <a href="about.html" onclick="closeMenu()">about</a>
-                        </li>
-                        <li>
-                            <a class ="navWhiteSpace" href="contact.html" onclick="closeMenu()">say hello!</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="works.html" onclick="closeMenu()">works</a>
+                </li>
+                <li>
+                    <a href="about.html" onclick="closeMenu()">about</a>
+                </li>
+                <li>
+                    <a class ="navWhiteSpace" href="contact.html" onclick="closeMenu()">say hello!</a>
+                </li>
+            </ul>
         </div>
+    </nav>
 
 </header>
 
@@ -274,18 +270,18 @@
                 <div class="styleImg centeredOnes">
                     <form class="contactForm">
                         <!-- Name -->
-                        <label class="" for="">Name</label>
-                        <input class="" type="text" id="" name="" placeholder="Jane Doe">
+                        <label for="contact-nameForm">Name</label>
+                        <input type="text" id="contact-nameForm" name="contact-nameForm" placeholder="Jane Doe">
                         <br>
                         <!-- Email -->
-                        <label class="" for="">Email</label>
-                        <input class="" type="text" id="" name="" placeholder="JaneDoe@gmail.com">
+                        <label for="contact-emailForm">Email</label>
+                        <input type="text" id="contact-emailForm" name="contact-emailForm" placeholder="JaneDoe@gmail.com">
                         <br>
                         <!-- topic -->
-                        <label class="" for="">Topic</label>  
+                        <label for="Topic">Topic</label>  
                                             
                             <!-- source for drop down: https://www.w3schools.com/Css/css_dropdowns.asp  -->
-                            <select class=""  name="Topic" id="payment-topicForm">
+                            <select name="Topic" id="payment-topicForm">
                             <option value="Select Topic">Select Inquiry Topic</option>
                             <option value="General">General</option>
                             <option value="Collaborate">Collaborate</option>
@@ -294,7 +290,7 @@
                             </select>
                         <br><br>
                         <!-- message -->
-                        <label class="" for="">Always happy to chat! How can I help?</label>  
+                        <label>Always happy to chat! How can I help?</label>  
                         <textarea class ="contactTextarea" placeholder="Type in your message" rows="6" cols="33"></textarea>
                         
                     </form>
