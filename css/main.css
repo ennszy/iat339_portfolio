@@ -1,4 +1,23 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  CSS variables learned from Mozilla docs
     https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 :root {
@@ -36,7 +55,7 @@ a:hover, .a:focus, .a:active{
 
 img{
     background-color: transparent;
-    transition: background-color opacity 2s ease-in-out;
+    transition: background-color 2s ease-in-out;
 }
 
 /* grow on hover transition: https://travis.media/how-to-make-an-item-grow-on-hover-with-css/ */
@@ -225,7 +244,7 @@ img.noHoverImg {
 }
 
 .cloudCharacter{
-    scale: 0.4;
+    /* scale: 0.4; */
     margin-top: -8rem;
     grid-column: 1/11;
 }
@@ -561,7 +580,6 @@ button.contactButton{
 
 .worksP{
     margin-top: 0;
-    /* color: var(--b); */
 }
 
 .projectsCon{
@@ -595,10 +613,6 @@ button.contactButton{
     text-align: center;
 }
 
-/* .styleSubHeaders{
-    grid-column: 2/12;
-} */
-
 .headingLeft{
     grid-column: 1/5;
 }
@@ -607,7 +621,6 @@ button.contactButton{
     grid-column: 5/12;
     margin-top: 15px;
     margin-bottom: 2rem;
-
 }
 
 .Branding{
@@ -627,7 +640,6 @@ button.contactButton{
 .centeredOnes{
     text-align: center;
     grid-column: 2/12;
-    /* margin-top: 0.5rem; */
 }
 
 .imgArtD{
@@ -639,35 +651,22 @@ button.contactButton{
     margin-top: 0.5rem;
 }
 
-/* .boxSize{
-    padding-top: 2rem;
-} */
-
-
-
-
-
-.flipCard{
-    perspective: 1000px;
-    margin-bottom: 0.5rem;
-}
-
 .mutedBlue{
     background-color: transparent;
     border:2px solid var(--text-white);
-    height: 150px;
+    height: 140px;
 }
 
 .paleBlue{
     background-color: var(--bg-accent2);
     color: var(--bg-main);
-    height: 110px;
+    height: 100px;
 }
 
 .beigeCream{
     background-color: var(--accent-action);
     color: var(--bg-main);
-    height: 110px;
+    height: 100px;
 }
 
 .ponyoBlue{
@@ -686,7 +685,11 @@ button.contactButton{
     height: 70px;
 }
 
-
+/* flip animation */
+.flipCard{
+    perspective: 1000px;
+    margin-bottom: 0.5rem;
+}
 
 .flipCard-Inner {
     position: relative;
@@ -709,10 +712,8 @@ button.contactButton{
   }
   .flipCard-front {
     background-color: transparent;
-    /* color: var(--text-white); */
   }
   .flipCard-back {
-    /* color: var(--text-white); */
     transform: rotateY(180deg);
   }
 
@@ -732,6 +733,10 @@ button.contactButton{
 
 /* desktop */
 @media screen and (min-width: 72rem) {
+
+    .bar {
+        display: none;
+      }
 
     /* works page*/
     .wHeader{
@@ -871,31 +876,6 @@ button.contactButton{
         margin-top: 5rem;
     }
 
-    .artDirectionImg{
-        scale: 1.5;
-        margin-left: 50rem;
-        margin-top: 3rem;
-    }
-
-    .palette{
-        scale:1.5;
-        margin-left: 50rem;
-        margin-top: 3rem;
-    }
-
-    .styleSubHeaders{
-        grid-column: 2/12;
-    }
-
-    .headingLeft{
-        grid-column: 8;
-        margin:0rem;
-    }
-
-    .headingRight{
-        grid-column: 9/12;
-        margin:0rem;
-    }
 
     /* awkward page */
     img.noHoverImg {
@@ -1067,7 +1047,6 @@ button.contactButton{
     /* right arrow */
     .rightArrow{
         grid-column: 10/12;
-        scale: 1.2;
     }
 
     .introProjDisplay{
@@ -1132,11 +1111,6 @@ button.contactButton{
     text-align: left;
     grid-column: 7/12;
 }
-
-
-
-
-
 
 
 }
